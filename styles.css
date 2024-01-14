@@ -160,7 +160,8 @@ a#menu-icon .bar {
         display: none;
         /* hide all second flip links */
     } 
-    .flip-item, .nav-link p {
+    .flip-item,
+    .nav-link p {
         /* disable animation, fix margins padding */
         position: static;
         display: flex;
@@ -467,8 +468,11 @@ body#contact-page {
 .contact-jumbotron-wrap {
     margin-top: 86px; /* for fixed navbar */
     padding: 0 5.75rem 0 7rem;
-    height: 70vh;
-    max-height: 702px;
+    /* height: 70vh;
+    max-height: 702px; */
+    /*  */
+    height: 100vh;
+    min-height: 800px;
 }
 .contact-jumbotron {
     display: flex;
@@ -476,6 +480,9 @@ body#contact-page {
     height: 100%
 }
 .connect-container {
+    height: 70vh;
+    max-height: 702px;
+    /*  */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -512,8 +519,8 @@ img.polaroid {
     border: 8px solid white;
     border-top-width: 15px;
     border-bottom-width: 32px;
-    z-index: -10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform .2s ease-out;
 }
 #bucky {
     top: 230px;
@@ -530,7 +537,9 @@ img.polaroid {
     right: 60px;
     transform: rotate(14.79deg);
 }
-
+#bucky:hover { transform: scale(1.3) rotate(-8.84deg); }
+#cake:hover { transform: scale(1.3) rotate(3.89deg); }
+#ocean:hover { transform: scale(1.3) rotate(14.79deg); }
 .contact-section {
     background-color: white;
     clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%); 
@@ -546,14 +555,16 @@ img.polaroid {
     font-weight: 700;
     font-size: 2.8rem;
 }
-input.form-control, textarea.form-control {
+input.form-control,
+textarea.form-control {
     border-radius: 1rem;
     padding: 1.2rem 1.8rem;
     background-color: #EEEEEE;
     border: none;
 
 }
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     background-color: #EEEEEE;
 }
 button.contact-send.btn.btn-primary {
@@ -640,12 +651,16 @@ body#about-page {
     margin-bottom: 7rem;
 }
 #aboutme-1 { margin-top: 8rem; }
-#aboutme-1, #aboutme-2 {
+#aboutme-1,
+#aboutme-2 {
     display: flex;
     gap: 6.25rem;
-} #vibes { display: flex; justify-content: space-between; }
-
-.about-page-wrap h2, .about-page-wrap h3 { text-transform: uppercase; font-weight: 300; }
+} 
+#vibes { display: flex; justify-content: space-between; }
+.about-page-wrap h2,
+.about-page-wrap h3 {
+    text-transform: uppercase; font-weight: 300;
+}
 .about-page-wrap h2 {
     font-size: 1.3rem;
     margin-bottom: 2rem;
@@ -666,7 +681,7 @@ body#about-page {
 .spotify-songs iframe {
     margin-bottom: .5rem;
 }
-img#audrey-1 { width: 382px; height: 450px; }
+img#audrey-1 { width: 363.92; height: 450px; }
 img#audrey-2 { width: 340px; height: 453px; }
 img#link-zelda {
     width: 240px;
@@ -680,7 +695,8 @@ img#link-zelda {
     white-space: nowrap;
     position: relative;
 }
-.carousel-contain::before, .carousel-contain::after {
+.carousel-contain::before,
+.carousel-contain::after {
     position: absolute;
     top: 0;
     height: 100%;
@@ -719,7 +735,8 @@ img#link-zelda {
 ---- ABOUT PAGE MEDIA QUERY ---
 ------------------------------- */
 @media (max-width: 1024px) {
-    #aboutme-1, #aboutme-2 {
+    #aboutme-1,
+    #aboutme-2 {
         gap: 3rem;
     }
     img#audrey-1 { width: 305.6px; height: 360px; }
@@ -747,7 +764,6 @@ img#link-zelda {
     .about-page-wrap {
         justify-content: start;
     }
-    .about-page-wrap p { font-size: .95rem; }
     .about-page-wrap h2 {
         margin-bottom: 2.5rem;
     }
@@ -759,7 +775,7 @@ img#link-zelda {
     .about-page-wrap #aboutme-1,
     .about-page-wrap #aboutme-2, 
     .about-page-wrap #vibes {
-        padding: 0 5rem;
+        padding: 0 3rem;
         margin-bottom: 6rem;
     }
     #aboutme-1 { margin-top: 4rem; }
@@ -776,10 +792,12 @@ img#link-zelda {
     .about-page-wrap #photo-gallery {
         margin-bottom: 5rem;
     }
-    #aboutme-1, #aboutme-2 {
+    #aboutme-1,
+    #aboutme-2 {
         gap: 2rem;
     }
-    img#audrey-2, img#audrey-1 { width: 100%; }
+    img#audrey-2,
+    img#audrey-1 { width: 100%; }
     .carousel-wrapper img {  height: 300px; }
 }
 
@@ -1022,51 +1040,1211 @@ body#play-page {
     .play-col-4 {
         width: 100%;
     }
-    .play-col-1, .play-col-2 {
+    .play-col-1,
+    .play-col-2 {
         justify-content: start;
     }
 }
 /* ------------------------
--------- PROJECT PAGE --------
+-------- PROJECT PAGES --------
 --------------------------- */
 
 /* project page */
-body#project1-page {
-    background-color: #FCF6EF;
-}
 .project-page-wrap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 86px;
 }
-.project-1-container {
-    margin-top: 86px; /* for fixed navbar */
-    color: black;
-    padding: 7rem 1.5rem;
-    max-width: 60rem;
+
+/* ------------------------
+-------- NYU SHUTTLE --------
+--------------------------- */
+body#nyushuttle-proj { background-color: #151515;}
+.nyushuttle-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem; /* key number for spacing */
+    max-width: 900px;
+    width: 100%;
 }
-.project-1-container h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.nyushuttle-content .purp { color: #BA8FFF; }
+.nyushuttle-content .wrapped-img {
+    width: 100%;
+    border-radius: 1.25rem;
 }
-#taskbuddy-hero {
-    width:100%;
-    border: black solid .2rem;
-    border-radius: 2rem;
+.nyushuttle-content a { text-decoration: underline; } .nyushuttle-content a:hover { color: #999;}
+.nyushuttle-content p {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+}
+.nyushuttle-content h2, .nyushuttle-content h3 {
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+.nyushuttle-content ul { /* overriding default styling */
+    padding-left: 1rem;
+}
+.nyushuttle-content li {
+    padding-left: .5rem;
+    font-size: 1.125rem;
+    margin-bottom: 1.8rem;
+}
+.boxy-lg h3,
+.boxy-lg h2,
+.boxy-med h2,
+.boxy-med h3,
+.nyushuttle-content h3 {
+    margin-bottom: 2.5rem;
+}
+.nyushuttle-content .pgraph {
+    margin-bottom: 4rem;
+}
+
+/* header img */
+.nyushuttle-hero {
+    max-width: 950px;
+    padding-top: 5rem;
+}
+#nyushuttle-hero-img {
+    width: 100%;
+    border-radius: 1.25rem;
+}
+/* title card */
+.nyushuttle-content .titlecard {
+    padding: 5rem 0 2rem 0;
+}
+.nyushuttle-content h1 {
+    font-size: 2.3125rem;
+    margin-bottom: 1.7rem;
+}
+.nyushuttle-content p.proj-subtitle {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 3.5rem;
+}
+.nyushuttle-content .proj-info { /* bento proj info */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+.nyushuttle-content .proj-info div {
+    flex: 1;
+    background-color: #303030;
+    padding: 1.25rem;
+    border-radius: 15px;
+}
+.nyushuttle-content .proj-info .info-cat { /* purple headers inside proj info */
+    margin-bottom: .62rem;
+}
+.nyushuttle-content .proj-info p {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    margin-bottom: 0.3125rem;
+}
+
+/* styling section headers / banners */
+.segment {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 7rem;
     margin-bottom: 5rem;
 }
-@media (max-width: 767px) {
-    .project-1-container {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+.segment-split {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+.segment-title {
+    margin-bottom: 3rem;
+}
+.segment-right {
+    width: 46%;
+}
+.segment-underlined {
+    display: inline;
+    padding-bottom: .3rem;
+    border-bottom: solid #BA8FFF 3px;
+}
+.segment-right h3 { /* for problem statement, users, our opportunity */
+    margin-bottom: 2rem;
+}
+.segment-right .pgraph:last-of-type { /* ensure vert spacing isn't messed up */
+    margin-bottom: 0;
+}
+
+p.motiv-emoji {
+    display: block;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 3.75rem;
+    margin-bottom: -7rem;
+}
+
+/* problem statement */
+.banner-emoji {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    padding: .25rem 3rem;
+    border-radius: 1rem;
+    background: #303030;
+}
+.banner-emoji p { margin-bottom: 0; text-wrap: nowrap;}
+.banner-emoji .emoji {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+/* bento box styling */
+.boxy-med {
+    justify-content: center;
+    background-color: #303030;
+    padding: 2.2rem;
+    border-radius: 1.25rem;
+}
+.boxy-lg {
+    padding: 4rem 3.2rem;
+    background-color: #303030;
+    border-radius: 1.25rem;
+}
+.boxy-med p:last-of-type,
+.boxy-med li:last-of-type,
+.boxy-med .pgraph:last-of-type { /* for centering text in box */
+    margin-bottom: 0 !important;
+}
+.boxy-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+}
+.boxy-small p {
+    font-size: .93rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+/* passiogo reviews */
+#reviews-contain {
+    display: flex;
+    gap: 2.3rem;
+    line-height: 2rem;
+}
+#passiogo-reviews {
+    /* max-width: 600px; */
+    width: 63%;
+    margin: auto;
+}
+/* quote box */
+.quote-box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    /* gap: 1.5rem; */
+    margin-top: 6rem;
+    padding: 1.5rem 3.875rem;
+}
+.quote-box .boxy-small {
+    width: 31%;
+}
+.quote-icon {
+    position: absolute;
+}
+.quote-box .quote-icon:nth-of-type(1) {
+    transform: rotate(180deg);
+    left: 0;
+    top: 0;
+}
+.quote-box .quote-icon:nth-of-type(2) {
+    right: 0;
+    bottom: 0;
+}
+
+/* passiogo breakdown */
+#passiogo-breakdown h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+#passiogo-breakdown p {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+#passiogo-breakdown .d-flex {
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#passiogo-breakdown .boxy-med {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    justify-content: center;
+}
+#passiogo-breakdown .passiogo-screens {
+    flex: 5;
+}
+
+/* key insights user research */
+.shuttle-research-proscons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5em;
+}
+.shuttle-research-proscons div {
+    flex: 1;
+}
+.proscons {
+    padding-top: .5rem;
+}
+.shuttle-user-research h3.purp {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+/* interview prev */
+.shuttle-interview-prev .d-flex {
+    gap: 1.5rem;
+}
+.shuttle-interview-prev .boxy-med { flex: 3; }
+.shuttle-interview-prev .interview-notes { flex: 4; }
+
+/* ideating solution */
+.shuttle-ideating-solution .boxy-med {
+    color: black;
+    background-color: #E4CCFF;
+}
+.shuttle-ideating-solution .boxy-med p { font-size: 1rem; }
+.brainstorm-wrap {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.brainstorm-wrap .brainstorm-25 {
+    flex: 3;
+}
+.brainstorm-wrap .boxy-med {
+    flex: 2;
+}
+
+.shuttle-app-inspo {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.shuttle-app-inspo img {
+    width: 300px;
+}
+.shuttle-wireframes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -2rem 5rem -2rem;
+    gap: 1rem;
+    
+}
+.shuttle-wireframes img:nth-of-type(1),
+.shuttle-wireframes img:nth-of-type(3) {
+    width: 60%;
+}
+.shuttle-wireframes img:nth-of-type(2) {
+    width: 35%;
+}
+
+/* paper prototype / usability testing */
+.shuttle-pproto-insights {
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.shuttle-pproto-insights .boxy-med { flex: 1; }
+.shuttle-pproto-insights li {
+    font-size: 1rem;
+    margin-bottom: .9rem; 
+}
+.shuttle-pproto { gap: 1rem; }
+.shuttle-pproto img { width: 100%; }
+
+/* solution priorities */
+.shuttle-solutions { margin-bottom: -3rem !important; }
+.shuttle-solutions p { line-height: 3rem; }
+
+/* final screens */
+.shuttle-finalscreens {
+    gap: 15rem;
+    margin: 7rem 0;
+}
+.shuttle-finalscreens p {
+    font-size: 1.1rem;
+    /* smaller size font for final screens */
+}
+.shuttle-finalscreen-wrap {
+    display: flex;
+    gap: 3.5rem;
+}
+.final-screen-description { flex: 2; }
+.finalscreen { flex: 3; }
+.finalscreen img {
+    width: 50%; /* Each image takes up half the width of the parent flex item */
+    height: 100%; /* Ensure the image takes up the full height of the parent */
+    object-fit: contain;
+}
+.shuttle-finalvid-wrap {
+    gap: 5rem;
+}
+.shuttle-finalvid-wrap .shuttle-video-descript {
+    width: 40%;
+}
+.shuttle-video-descript .play-button {
+    margin-bottom: 2.5rem;
+}
+.shuttle-finalvid-wrap video {
+    border-radius: 2.7rem;
+    width: 32%;
+}
+
+/* style guide */
+.shuttle-styles,  .shuttle-styles div:nth-of-type(2){
+    gap: 1.5rem;
+}
+
+/* before and after */
+.shuttle-bef-aft img {
+    width: 19%;
+}
+
+/* accessibility */
+.shuttle-accessibility-col {
+    gap: 1.5rem;
+}
+.shuttle-accessibility-col .boxy-med img {
+    width: 100%;
+}
+/* --------------------------------------
+-------- NYU SHUTTLE MEDIA QUERY --------
+----------------------------------------- */
+@media (max-width: 1200px) {
+    /* universal styling */
+    .nyushuttle-content h1 {
+        font-size: 2.1rem;
+        margin-bottom: 1.5rem;
     }
-    #taskbuddy-hero {
-        border: black solid .15rem;
+    .nyushuttle-content h2,
+    .nyushuttle-content h3 {
+        font-size: 1.1rem;
+    }
+    .nyushuttle-content p {
+        font-size: 1.1rem;
+    }
+    .nyushuttle-content p.proj-subtitle {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+    .nyushuttle-content .proj-info p {
+        font-size: .9rem;
+        line-height: 1.1rem;
+    }
+    .quote-box {
+        padding: 2rem 1.5rem;
+    }
+    .nyushuttle-content li {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    .shuttle-pproto-insights li {
+        font-size: 1rem;
+        margin-bottom: 0.9rem;
+    }
+    .segment {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .segment-right {
+        width: 50%;
+    }
+    .nyushuttle-content .wrapped-img {
+        border-radius: 1rem;
+    }
+    .boxy-med, .boxy-lg {
+        border-radius: 1rem;
+    }
+    .boxy-med {
+        padding: 2.2rem 1.7rem;
+    }
+    .boxy-lg {
+        padding: 3rem 2.5rem;
+    }
+    .boxy-small {
+        padding: 0.9375rem;
+    }
+    .boxy-small p { font-size: .95rem;}
+    p.motiv-emoji {
+        font-size: 3.75rem;
+    }
+    .banner-emoji {
+        justify-content: center;
+        padding: .25rem 1.5rem;
+    }
+    .banner-emoji .emoji {
+        font-size: 2rem;
+        padding: 0 1.6rem;
+    }
+}
+@media (max-width: 767px) {
+    .project-page-wrap {
+        padding: 0 2rem;
+    }
+    .nyushuttle-content {
+        gap: 4rem; /* key number for spacing */
+    }
+    .segment {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+    .segment-right { width: 100%; }
+    .segment-split { margin-bottom: 3rem; }
+    .segment-title { margin-bottom: 3rem; }
+    .shuttle-finalscreens {
+        gap: 7rem;
+        margin: 5rem 0 2rem 0;
+    }
+    /*  */
+    .nyushuttle-content .proj-info { flex-wrap: wrap; }
+    .nyushuttle-content .proj-info div{ flex-basis: 40%; }
+    .nyushuttle-content .pgraph {
+        margin-bottom: 3rem;
+    }
+    .nyushuttle-content p {
+        font-size: 1rem;
+    }
+    .shuttle-user-research h3.purp {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+    }    
+    .nyushuttle-content li {
+        font-size: .95rem;
+        margin-bottom: 1.5rem;
+    }
+    .boxy-lg h3,
+    .boxy-lg h2,
+    .boxy-med h2,
+    .boxy-med h3,
+    .nyushuttle-content h3 {
+        margin-bottom: 1.5rem;
+    }
+    #nyushuttle-hero-img,
+    .nyushuttle-content .wrapped-img {
+        border-radius: .9rem;
+    }
+    .boxy-med p, .boxy-lg p {
+        border-radius: .9rem;
+    }
+    .boxy-med {
+        padding: 1.7rem 1.3rem;
+    }
+    .boxy-lg {
+        padding: 2.5rem 2rem;
+    }
+    .boxy-small {
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+    }
+    .boxy-small p {
+        font-size: .95rem;
+    }
+    p.motiv-emoji {
+        font-size: 3.75rem;
+    }
+    .banner-emoji {
+        padding: .7rem .3rem;
+    }
+    .banner-emoji p {
+        text-wrap: wrap;
+        text-align: center;
+    }
+    .banner-emoji .emoji {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+    .shuttle-wireframes {
+        margin: 0 -.5rem 5rem -.5rem;
+    }
+    /* prototype */
+    .shuttle-pproto-insights li {
+        margin-bottom: .6rem; 
+    }
+    /* second quote box */
+    .shuttle-feedback {
+        flex-wrap: nowrap;
+    }
+    /* final product */
+    .shuttle-finalscreen-wrap,
+    .shuttle-finalvid-wrap {
+        align-items: center;
+        gap: 2rem;
+    }
+    .shuttle-finalscreens .shuttle-finalscreen-wrap:nth-of-type(2) {
+        flex-direction: column;
+    }
+    .shuttle-finalscreens .shuttle-finalscreen-wrap:nth-of-type(1),
+    .shuttle-finalscreens .shuttle-finalscreen-wrap:nth-of-type(3), 
+    .shuttle-finalvid-wrap
+    {
+        flex-direction: column-reverse;
+    }
+    /* final product screens */
+    .final-screen-description,
+    .shuttle-finalvid-wrap .shuttle-video-descript {
+        width: 100%;
+    }
+    .finalscreen {
+        width: 90%;
+    }
+    .shuttle-finalvid-wrap video {
+        width: 50%;
+    }
+
+    .quote-box .boxy-small {
+        width: 30%;
+    }
+    .quote-box {
+        padding: 2rem 1.5rem;
+        margin-top: 4rem;
+    }
+    #reviews-contain {
+        flex-direction: column-reverse;
+        line-height: 1.6rem;
+    }
+    #passiogo-reviews {
+        width: 100%;
+    }
+    #passiogo-breakdown .boxy-med {
+        width: 100%;
+    }
+
+}
+@media (max-width: 576px) {
+    .project-page-wrap {
+        padding: 0 1.5rem;
+    }
+    .nyushuttle-content .titlecard {
+        padding: 3rem 0 0 0;
+    }
+    .segment {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .segment-split, .segment-title {
+        margin-bottom: 2rem;
+    }
+    .shuttle-finalscreens {
+        margin-top: 4rem;
+    }
+    .nyushuttle-content h1 {
+        font-size: 1.7rem;
+    }
+    .nyushuttle-content li {
+        font-size: .95rem;
+        margin-bottom: .5rem;
+    }
+    .nyushuttle-content p.proj-subtitle {
+        font-size: 1rem;
+    }
+    p.motiv-emoji {
+        margin-bottom: -3rem;
+    }
+    #nyushuttle-hero-img,
+    .nyushuttle-content .wrapped-img {
+        border-radius: .5rem;
+    }
+    .boxy-med,
+    .boxy-lg,
+    .boxy-small {
+        border-radius: .5rem;
+    }
+    .boxy-lg,
+    .boxy-med {
+        padding: 1.8rem 1.3rem;
+    }
+    .quote-box {
+        padding: 3.5rem 0rem;
+    }
+    .quote-box .boxy-small {
+        width: 45%;
+    }
+    .shuttle-feedback.quote-box .boxy-small {
+        width: 80%;
+    }
+    .shuttle-wireframes img:nth-of-type(1),
+    .shuttle-wireframes img:nth-of-type(3) {
+        width: 90%;
+    }
+    .shuttle-wireframes img:nth-of-type(2) {
+        width: 60%;
+    }
+    #passiogo-breakdown .boxy-med, 
+    .shuttle-research-proscons div,
+    .shuttle-pproto-insights .boxy-med {
+        width: 100%;
+    }
+    .shuttle-app-inspo img {
+        width: 250px;
+    }
+    #passiogo-breakdown .d-flex:nth-of-type(1) {
+        flex-direction: column-reverse;
+    }
+    .shuttle-pproto-insights, 
+    .brainstorm-wrap, 
+    .shuttle-accessibility-col, 
+    .shuttle-styles.d-flex, 
+    .shuttle-interview-prev .d-flex, 
+    #passiogo-breakdown .d-flex:nth-of-type(2), 
+    .shuttle-research-proscons, 
+    .shuttle-feedback
+    {
+        flex-direction: column;
+    }
+    .shuttle-feedback {
+        align-items: center;
+    }
+    .finalscreen {
+        width: 100%;
+    }
+    .shuttle-finalvid-wrap video {
+        width: 70%;
+    }
+    .shuttle-research-proscons {
+        gap: 1rem;
+        margin: 3rem 0 5rem 0;
+    }
+
+}
+
+
+
+/* ------------------------
+-------- TASKBUDDY --------
+--------------------------- */
+
+body#tbud-proj { background-color: #EFE4DF; }
+/* universal styling */
+.tbud-contain {
+    max-width: 950px;
+    gap: 7rem;
+    color: black;
+} .tbud-contain a { color: black;}
+.tbud-contain h1 {
+    font-size: 1.9rem;
+    margin-bottom: 2.75rem;
+}
+.tbud-contain h2,
+.tbud-contain h3,
+.tbud-contain h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+.tbud-contain p,
+.tbud-contain li {
+    font-size: 1.125rem;
+    line-height: 2.125rem; /* 188.889% */
+}
+p.tbud-lheight-shorter,
+li.tbud-lheight-shorter {
+    line-height: 1.75rem; /* 155.556% */
+}
+.tbud-contain ul { /* overriding default styling */
+    padding-left: 2rem;
+}
+.tbud-contain li {
+    padding-left: .5rem;
+}
+.tbud-contain .wrapped-img {
+    width: 100%;
+}
+.tbud-contain h2.sect-title { /* underlined */
+    display: inline-block;
+    padding-bottom: 1px;
+    margin-bottom: 3rem;
+    border-bottom: 3px black solid;
+}
+/* hero */
+#tbud-hero {
+    width:100%;
+    border: black solid 2px;
+    border-radius: 2rem;
+    margin: 5rem 0;
+}
+.tbud-contain .titlecard h3 {
+    margin-bottom: .7rem;
+}
+.tbud-contain .titlecard p {
+    font-size: 1.25rem;
+}
+.tbud-contain p.proj-subtitle {
+    margin-bottom: 4rem;
+}
+.tbud-contain .proj-info {
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.tbud-contain .proj-info div {
+    flex: 1;
+}
+.tbud-contain .proj-info div p {
+  line-height: 2rem;  
+}
+/* challenge */
+#tbud-challenge {
+    padding-top: 3rem;
+}
+/* double diamond */
+.tbud-contain .ddiamond {
+    max-width: 700px;
+    width: 100%;
+    margin: 4rem 0 2rem 0;
+}
+/* discovery */
+.tbud-discovery {
+    gap: 5rem;
+}
+
+/* interview */
+.tbud-interview-insights { /* interview bullet feedback */
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 2.5rem 0 2rem 0;
+}
+.tbud-interview-insights div {
+    flex-basis: 45%;
+    align-items: start;
+    gap: 1.2rem;
+}
+/* defining */
+.tbud-defining-prob {
+    gap: 4rem;
+}
+.tbud-wireframe {
+    max-width: 760px;
+    margin: auto;
+    border-radius: 1.25rem;
+    border: 1.5px solid #000;
+    overflow: hidden;
+}
+.tbud-wireframe-decisions {
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.tbud-wireframe-decisions div {
+    flex: 1;
+    background-color: #E9D0C5;
+    padding: 1.25rem;
+    border-radius: 0.9375rem;
+}
+.tbud-wireframe-decisions h4 {
+    font-size: .95rem;
+    margin-bottom: .8rem;
+}
+.tbud-wireframe-decisions p {
+    line-height: 1.25rem;
+    font-size: .95rem;
+    margin: 0;
+}
+/* problem statement */
+.tbud-prob-statement {
+    background: white;
+    gap: 1rem;
+    padding: 1rem .7rem;
+    border-radius: 1.25rem;
+    border: 1.5px solid #000;
+}
+.tbud-prob-statement p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+}
+.tbud-prob-statement p:nth-of-type(1), .tbud-prob-statement p:nth-of-type(3) { /* for emojis */
+    font-size: 2.5rem;
+}
+/* user flow */
+.tbud-userflow-wrap {
+    gap: 2rem;
+    background: white;
+    margin: 4rem 0 2rem 0;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    border: 1.5px solid #000;
+}
+.tbud-userflow-wrap li {
+    padding-bottom: 1rem;
+}
+
+.tbud-userflow-wrap div:nth-of-type(1) {
+    flex: 2;
+}
+.tbud-userflow-wrap div:nth-of-type(2) {
+    flex: 3;
+}
+
+/* phase 3 developing and brainstorm sol */
+.tbud-develop {
+    gap: 3rem;
+}
+.tbud-wireframe-feedback { /* wireframe bullet feedback */
+    flex-wrap: wrap;
+    padding: 2rem 0 4rem 0;
+    gap: 3rem
+}
+.tbud-wireframe-feedback div {
+    align-items: start;
+    flex-wrap: nowrap;
+    flex-basis: 45%;
+    gap: 1.2rem;
+} 
+.tbud-wireframe-feedback div p {
+    margin-top: .3rem;
+    margin-bottom: 0;
+}
+/* pproto */
+.tbud-pproto-wrap {
+    max-width: 900px;
+    background: #E9D0C5;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    margin: auto;
+    margin-bottom: 2rem; 
+}
+.tbud-pproto-wrap div:nth-of-type(1) {
+    gap: .5rem;
+    padding-bottom: 1rem;
+}
+.tbud-pproto-wrap h3 {
+    font-weight: 500;
+    padding-top: 2px;
+    margin-bottom: 1rem;
+}
+.tbud-pprotos img {
+    width: 19.3%;
+    border-radius: 1.0625rem;
+}
+
+/* USABILITY TESTING / MEDIUM-FIDELITY PROTOTYPES */
+.tbud-usabilitytest {
+    gap: .5rem;
+}
+.tbud-usabilitytest h2 {
+    padding-top: 2px;
+    /* margin-bottom: 0; */
+}
+.tbud-midproto-sect {
+    gap: 4rem;
+}
+.tbud-contain .mid-proto-wrapper {
+    gap: 3rem;
+    background-color: #E9D0C5;
+    padding: 2.5em 2.75rem;
+    border-radius: 1.25rem;
+}
+.tbud-contain .mid-proto-wrapper:last-of-type {
+    margin-bottom: 4rem;
+}
+.tbud-contain .mid-proto-wrapper .mid-protos {
+    display: flex;
+    gap: 1rem;
+    flex: 3;
+}
+.tbud-contain .mid-protos img {
+    width: 47%;
+    border-radius: 1.25rem;
+}
+.tbud-contain .mid-proto-wrapper p {
+    flex: 4;
+}
+
+/* final screens */
+.tbud-finalprod-wrap {
+    gap: 5rem;
+}
+.tbud-final-screens {
+    gap: 10rem;
+}
+.tbud-final-box {
+    max-width: 790px;
+    margin: auto;
+    background-color: white;
+    padding: 4rem 3.6rem;
+    border-radius: 1.25rem;
+    border: 1.5px solid black;
+}
+.tbud-contain .tbud-final-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+.tbud-final-box img {
+    padding: 4rem 1rem 2rem 1rem;
+}
+.tbud-vid-wrap {
+    gap: 4rem;
+    max-width: 850px;
+    margin: auto;
+}
+.tbud-vid-wrap video {
+    width: 35%;
+    border-radius: 3rem;
+}
+.tbud-vid-info div {
+    background-color: white;
+    padding: 2.7rem 1.8rem;
+    border-radius: 1.25rem;
+    border: 1.5px solid black;
+}
+.play-button {
+    margin-bottom: 2rem;
+}
+.tbud-other-screens {
+    background-color: #E9D0C5;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    border: 1.5px solid black;
+    margin-bottom: 5rem;
+}
+.tbud-other-screens p {
+    font-weight: 600;
+}
+.tbud-other-screens img {
+    width: 16%;
+}
+/* reflect */
+.tbud-nexttime div, .tbud-reflect div {
+    gap: 6rem;
+}
+.tbud-nexttime div {
+    margin-bottom: 11rem;
+}
+.tbud-contain p.tbud-reflect-emoji {
+    font-size: 2.4rem;
+    text-wrap: nowrap;
+}
+/* -----------------------------------
+-------- TASKBUDDY MEDIA QUERY --------
+-------------------------------------- */
+@media (max-width: 1200px) {
+    .tbud-contain h2,
+    .tbud-contain h3,
+    .tbud-contain h4,
+    .tbud-contain .tbud-final-box h3
+    {
+        font-size: 1.1rem;
+        margin-bottom: 2.3rem;
+    }
+    .tbud-contain p,
+    .tbud-contain li {
+        font-size: 1.1rem;
+        line-height: 2rem; /* 188.889% */
+    }
+    p.tbud-lheight-shorter,
+    li.tbud-lheight-shorter {
+        line-height: 1.65rem;
+    }
+    .tbud-contain ul { /* overriding default styling */
+        padding-left: 1.5rem;
+    }
+    /* hero */
+    .tbud-contain .proj-info {
+        gap: 3rem;
+        margin-bottom: 1rem;
+    }
+    .tbud-contain .proj-info div p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;  
+    }
+    #tbud-challenge {
+        padding-top: 0;
+    }
+    /* define, override */
+    .tbud-wireframe-decisions div {
+        flex-basis: 40%;
+    }
+    .tbud-wireframe-decisions h4 {
+        font-size: .95rem;
+        margin-bottom: .8rem;
+    }
+    .tbud-wireframe-decisions p {
+        line-height: 1.25rem;
+        font-size: .95rem;
+        margin: 0;
+    }
+    .tbud-contain .mid-protos img {
         border-radius: 1rem;
     }
 }
+@media (max-width: 767px) {
+    .tbud-contain .proj-info {
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .tbud-contain .proj-info div {
+        flex-basis: 40%;
+    }
+    .tbud-userflow-wrap {
+        flex-direction: column;
+    }
+    .tbud-contain .mid-proto-wrapper {
+        flex-direction: column;
+    }
+    .tbud-contain .mid-proto-wrapper .mid-protos {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .tbud-interview-insights {
+        gap: 1rem;
+    }
+    .tbud-interview-insights div {
+        flex-basis: 47%;
+    }
+    .tbud-pprotos img {
+        border-radius: .9rem;
+    }
+    .tbud-final-box {
+        padding: 3rem 2.6rem;
+    }
+    .tbud-final-box img {
+        padding: 4rem 1rem 0rem 1rem;
+    }
+    .tbud-vid-wrap video {
+        width: 40%;
+        border-radius: 2rem;
+    }
+    .tbud-other-screens {
+        padding: 1.5rem 1rem;
+    }
+}
 @media (max-width: 576px) {
-    .project-1-container {
-        padding-left: 2rem;
-        padding-right: 2rem;
+    #tbud-hero {
+        border: black solid 1.5px;
+        border-radius: 1rem;
+    }
+    .tbud-contain {
+        gap: 4rem;
+    }
+    .tbud-discovery {
+        gap: 4rem;
+    }
+    .tbud-defining-prob {
+        gap: 3rem;
+    }
+    .tbud-contain h1 {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    .tbud-contain h2,
+    .tbud-contain h3,
+    .tbud-contain h4,
+    .tbud-contain .tbud-final-box h3,
+    .tbud-contain h2.sect-title {
+        font-size: .95rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .tbud-contain p.proj-subtitle {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+    }
+    .tbud-contain .proj-info {
+        padding: 0;
+    }
+    .tbud-interview-insights,
+    .tbud-wireframe-feedback {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .tbud-interview-insights {
+        padding: 1.5rem 0;
+    }
+    .tbud-wireframe-feedback {
+        padding: 0 0 2rem 0;
+    }
+    .tbud-contain h4 {
+        margin-bottom: 1rem;
+    }
+    .tbud-wireframe-decisions {
+        flex-direction: column;
+    }
+    .tbud-wireframe-decisions div {
+        padding: 1rem 1rem 1.25rem 1rem;
+    }
+    .tbud-prob-statement {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .tbud-userflow-wrap {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+    .tbud-prob-statement p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .tbud-pproto-wrap {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .tbud-pproto-wrap h3 {
+        margin: 0;
+    }
+    .tbud-pprotos img {
+        border-radius: .5rem;
+    }
+    .tbud-midproto-sect {
+        gap: 3rem;
+    }
+    .tbud-contain .mid-proto-wrapper .mid-protos {
+        padding: 0;
+    }
+    .tbud-final-box img {
+        padding: 1rem 0;
+    }
+    .tbud-contain .mid-proto-wrapper,
+    .tbud-final-box {
+        border-radius: 1rem;
+        padding: 1.75rem 1.5rem;
+    }
+    .tbud-finalprod-wrap {
+        gap: 3rem;
+    }
+    .tbud-final-screens {
+        gap: 3rem;
+    }
+    .tbud-vid-info div {
+        padding: 1.75rem 1.5rem;
+        border-radius: 1rem;
+    }
+    .tbud-vid-wrap video {
+        width: 70%;
+        border-radius: 2.5rem;
+    }
+    #tbud-vid1 {
+        flex-direction: column-reverse;
+    }
+    #tbud-vid2 {
+        flex-direction: column;
+    }
+    .tbud-other-screens {
+        border-radius: 1rem;
+    }
+    .tbud-nexttime div {
+        margin-bottom: 7rem;
     }
 }

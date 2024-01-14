@@ -17,7 +17,7 @@
     <title>Audrey Vo</title>
   </head>
 
-<body class="p-0 m-0 border-0" id="project1-page">
+<body class="p-0 m-0 border-0" id="tbud-proj">
     <!-- BOOTSTRAP NAVBAR -->
     <div class="navbar navbar-expand-md bg-dark fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
@@ -75,25 +75,425 @@
       </div>
     </div>
     <div class="project-page-wrap container-fluid"> 
-        <div class="project-1-container">
-            <img id="taskbuddy-hero" src="./project-media/taskbuddy-banner.png" alt="taskbuddy thumbnail">
-            <h1>
-                Taskbuddy || Organization & task management for college students
-            </h1>
-            <p>CLASS PROJECT || To-do lists, schedules, assignments, and classes all together in one app. A productivity tool built with students in mind that prioritizes structure, motivation, and usability.</p>
+        <div class="d-flex flex-column tbud-contain">
+            <div class="titlecard">
+                <img id="tbud-hero" src="./taskbuddy-media/taskbuddy-banner.png" alt="taskbuddy thumbnail">
+                <h1>
+                    TaskBuddy | Organization & task management for college students
+                </h1>
+                <p class="proj-subtitle">
+                    To-do lists, schedules, assignments, and classes all in one app. A productivity tool built with students in mind that prioritizes structure and motivation.
+                </p>
+                <div class="d-flex proj-info">
+                    <div>
+                        <h3>Timeline</h3>
+                        <p>
+                            3 weeks
+                            <br>
+                            (Oct-Nov 2023)
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Role</h3>
+                        <p>
+                            UX Designer (solo project)
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Disciplines</h3>
+                        <p>
+                            UX Research
+                            <br>
+                            UX/UI Designer
+                            <br>
+                            Interaction Design
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Tools</h3>
+                        <p>
+                            Figma
+                            <br>
+                            Adobe Illustrator
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- challenge -->
+            <div id="tbud-challenge">
+                <h2 class="sect-title">
+                    CHALLENGE
+                </h2>
+                <p>
+                    In a fast-paced college environment, students frequently face <strong>difficulty with organization and task management</strong> given their many assignments and commitments. For this project, I sought to build a UI solution that addresses their needs through user research and testing.
+                </p>
+                <p>
+                    As a foundation, I focused on delivering a polished minimum viable product (MVP) that included the ability to add a task, complete a task, and categorize tasks by class.
+                </p>
+            </div>
+            <!-- design approch -->
+            <div>
+                <h2>DESIGN APPROACH</h2>
+                <p>
+                    To guide this process, I used the research-based <strong>Double Diamond Method of Design</strong> to guarantee the ideal user experience. This approach embraces iteration and discovery while presenting a clear path to the final delivery of the product.
+                </p>
+                <div class="d-flex justify-content-center">
+                    <img class="ddiamond" src="./taskbuddy-media/ddiamond.png"> 
+                </div>
+                
+            </div>
+            <!-- phase 1 discovery -->
+            <div class="d-flex flex-column tbud-discovery">
+                <div>
+                   <h2 class="sect-title">PHASE 1: DISCOVERY</h2>
+                    <p>
+                        This phase focused on understanding the details of the problem at hand. For TaskBuddy, I saw an opportunity to better understand the pain points and preferences of my user base to contextualize the product before diving into the problem. Methods like mind mapping with peers and user discovery were used to achieve this.
+                    </p> 
+                </div>
+                <!-- How do users currently manage tasks? -->
+                <div>
+                    <h3>🤔 How do users currently manage tasks?</h3>
+                    <p>
+                        In user discovery interviews, I aimed to familiarize myself students’ existing habits with organizing tasks and assignments. I asked questions such as: 
+                        <em>
+                        How do you organize your tasks? 
+                        What motivates you to do your work? 
+                        How close to deadlines do you get when completing tasks? 
+                        Do you use any apps to organize your work?    
+                        </em>
+                    </p>
+                </div>
+                <!-- key insights -->
+                <div>
+                    <h3>Key insights from interviews with 6 college students revealed:</h3>
+                    <div class="d-flex justify-content-between tbud-interview-insights">
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-pin.svg">
+                            <p class="tbud-lheight-shorter">
+                                Students tend to prioritize + complete assignments based on how close due dates are
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-pin.svg">
+                            <p class="tbud-lheight-shorter">
+                                Calendar visualization is important to users, with Google Calendar being a particularly popular tool
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-pin.svg">
+                            <p class="tbud-lheight-shorter">
+                                In apps, students value categorization and color coding of tasks
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-pin.svg">
+                            <p class="tbud-lheight-shorter">
+                                The vast majority of students tend to procrastinate, but reminders are useful in helping them complete tasks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            <!-- phase 2 defining the problem -->
+            <div class="d-flex flex-column tbud-defining-prob">
+                <div>
+                  <h2 class="sect-title">PHASE 2: DEFINING THE PROBLEM</h2>
+                    <h3>LO-FI WIREFRAMES</h3>
+                    <p>
+                        Based on discoveries about the user group, a lo-fi wireframe attempt was crafted to address my findings through several features.
+                    </p>  
+                </div>
+                <!-- design decisions -->
+                <div class="d-flex tbud-wireframe-decisions">
+                    <div>
+                        <h4>To-do list</h4>
+                        <p>
+                            Upon opening the app, users immediately are met with a to-do list of their tasks, ordered by approaching due date.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Navbar</h4>
+                        <p>
+                            Opted for this rather than a collapsible menu to maximize discoverability of different tools. Nav items include home, calendar, classes, settings, and “add a task.”
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Adding a task</h4>
+                        <p>
+                            With adding a task being the central focus of the app, it was included as a button in the nav menu to be accessible from any page in the app.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Color Coding/Labeling</h4>
+                        <p>
+                            Every task has the ability to be color coded and labeled by class.
+                        </p>
+                    </div>
+                </div>
+                <!-- wireframe -->
+                <div class="tbud-wireframe">
+                   <img class="wrapped-img" src="./taskbuddy-media/taskbuddy-wireframe.jpg"> 
+                </div>
+                <p>
+                    Ideating and getting feedback helped me hone in on the central issues students were facing: procrastination due to forgetting assignments until right before they were due; effort in setting reminders for tasks; and difficulty in visualizing their workload.
+                </p>
+                <!-- problem statement -->
+                <div class="d-flex justify-content-center align-items-center tbud-prob-statement">
+                    <p class="d-none d-sm-block">😵‍💫</p>
+                    <p>
+                        STUDENTS ARE OVERWHELMED BY THEIR WORKLOAD AND STRUGGLE TO STUDY PROACTIVELY
+                    </p>
+                    <p class="d-none d-sm-block">🫤</p>
+                </div>
+                <p>
+                    OUR OPPORTUNITY: TaskBuddy can help <strong>streamline individuals’ intuitive study habits</strong> by offering different ways to visualize upcoming tasks and <strong>adding important details</strong> to tasks like dates, descriptions, colors, and notifications.
+                </p>
+            </div>
+            <!-- user flow -->
+            <div>
+                <h2>USER FLOW: Thinking About How Users Might Navigate Through the App</h2>
+                <p>
+                    However, initial wireframes revealed that there needed to be a clearer intention behind the connections leading to different pages. Drawing several user flow charts helped me better empathize with users by thinking about possible paths they would take through the interface. I considered the main objective of the app—adding, organizing, and completing tasks—but also individual preference for task viewing formats.
+                </p>
+                <div class="d-flex align-items-center tbud-userflow-wrap">
+                    <div>
+                        <p class="tbud-lheight-shorter">
+                            Defining the flow made it possible to:
+                        </p>
+                        <ul>
+                            <li class="tbud-lheight-shorter">
+                                Find new connections on different pages where features (e.g. adding a task) may need to be accessed
+                            </li class="tbud-lheight-shorter">
+                            <li class="tbud-lheight-shorter">
+                                Reduce or eliminate unnecessary components (excess number of edit buttons on different pages)
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img class="wrapped-img" src="./taskbuddy-media/user-flow.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- phase 3, develop -->
+            <div class="d-flex flex-column tbud-develop">
+                <div>
+                    <h2 class="sect-title">PHASE #3: DEVELOPING & BRAINSTORMING THE SOLUTION</h2>
+                </div>    
+                <div>
+                    <h3>We encountered several problems with the first wireframe️ ⚠️</h3>
+                    <div class="d-flex justify-content-between tbud-wireframe-feedback">
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-circledx.svg">
+                            <p class="tbud-lheight-shorter">
+                                “Add task” looked too similar to a nav link
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-circledx.svg">
+                            <p class="tbud-lheight-shorter">
+                                Too many unnecessary buttons
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>So in the paper prototype, the following changes were made 🔨</h3>
+                    <div class="d-flex justify-content-between tbud-wireframe-feedback">
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-check.svg">
+                            <p class="tbud-lheight-shorter">
+                                Enlarged + distinguished “add task” button
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-check.svg">
+                            <p class="tbud-lheight-shorter">
+                                Removed Classes page (but later re-added)
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./taskbuddy-media/icon/lucide-check.svg">
+                            <p class="tbud-lheight-shorter">
+                                Fleshed out add and edit task modals
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- paper proto -->
+                <div class="d-flex flex-column tbud-pproto-wrap">
+                    <div class="d-flex align-items-start">
+                        <h3>PAPER PROTOTYPES</h3>
+                        <img src="./taskbuddy-media/icon/lucide-pencil-line.svg">
+                    </div>
+                    <div class="d-flex justify-content-between tbud-pprotos">
+                        <img src="./taskbuddy-media/pproto1.jpg">
+                        <img src="./taskbuddy-media/pproto2.jpg">
+                        <img src="./taskbuddy-media/pproto3.jpg">
+                        <img src="./taskbuddy-media/pproto4.jpg">
+                        <img src="./taskbuddy-media/pproto5.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- medium fidelity -->
+            <div class="d-flex flex-column tbud-midproto-sect">
+                <div>
+                    <div class="d-flex align-items-start tbud-usabilitytest">
+                        <h2>USABILITY TESTING / MEDIUM-FIDELITY PROTOTYPES</h2>
+                        <img class="d-none d-sm-block" src="./taskbuddy-media/icon/lucide-pointer-click.svg">
+                    </div> 
+                    <p>
+                        I also conducted testing with medium fidelity prototypes to further refine features and ensure that I was meeting my goals for users' needs and expectations.
+                    </p>
+                </div>
+                
+                <div class="d-flex align-items-center mid-proto-wrapper">
+                    <p class="tbud-lheight-shorter">
+                        Users enjoyed the versatility of viewing tasks in checklist or calendar format, but <strong>few understood tasks were clickable</strong> on the checklist to see details (compared to the calendar). Users also inquired why information like time and category weren’t visible in the home hub.
+                        <br><br>
+                        Modified nav icons were universally understood among users.
+                    </p>
+                    <div class="d-flex mid-protos">
+                        <img src="./taskbuddy-media/midproto1.jpg">
+                        <img src="./taskbuddy-media/midproto2.jpg">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mid-proto-wrapper">
+                    <p class="tbud-lheight-shorter">
+                        Testing showed that task modals were <strong>overall effective</strong> in terms of understandability. To better signal that the tab was collapsible, I added a drag handle in this iteration stage.
+                        <br><br>
+                        Some users noted <strong>accessibility concerns</strong> for the colored text. There were also issues with buttons for deleting tasks or marking them complete not <strong>immediately appearing to be interactive</strong>. I ensured that these issues were solved in the final iteration.
+                    </p>
+                    <div class="d-flex mid-protos">
+                        <img src="./taskbuddy-media/midproto3.jpg">
+                        <img src="./taskbuddy-media/midproto4.jpg">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mid-proto-wrapper">
+                    <p class="tbud-lheight-shorter">
+                        Like in the paper prototype, the Classes page was omitted in this iteration to keep the central focus on the MVP. Instead, I opted to have “add/edit category” in a subpage in the settings.
+                        <br><br>
+                        However, I later re-added the nav item as I reconsidered the merits of accessible class information for students: info like class times, professor names, and external syllabi links.
+                    </p>
+                    <div class="d-flex mid-protos">
+                        <img src="./taskbuddy-media/midproto5.jpg">
+                        <img src="./taskbuddy-media/midproto6.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- final prototype -->
+            <div class="d-flex flex-column tbud-finalprod-wrap">
+                <div>
+                    <div class="d-flex align-items-start">
+                        <h2 class="sect-title">PHASE #4: DELIVERY & FINAL PRODUCT <img src="./taskbuddy-media/icon/lucide-wand.svg"></h2>
+                    </div>
+                    <p>
+                        In follow-ups with previous usability test interviewees, users reported overwhelmingly positive feedback on the adjustments made to the issues that we faced. This final product is a result of several rounds of prototyping with user testing at each stage, with data informing every design decision that was made. Below I demonstrate the key features that were developed as part of this project.
+                    </p>
+                </div>
+                <div class="d-flex flex-column tbud-final-screens">
+                  <div class="d-flex flex-column tbud-final-box">
+                    <h3>
+                        To-do list and calendar supports users in visualizing workload
+                    </h3>
+                    <p>
+                        The to-do list offers users a way to complete tasks—sorted by importance/deadline—with ease by <strong>simply checking a box</strong>. The clickable area indicates that users can expand more details about the task, and color and time labels on both pages <strong>display useful information</strong> without having to enter a separate subpage. A horizontal scroll calendar allows you to reference future or past tasks quickly, and the month dropdown can even let the user skip far ahead.
+                    </p>
+                    <img class="wrapped-img" src="./taskbuddy-media/tbud-final-1.png">
+                </div>
+                <div class="d-flex flex-column tbud-final-box">
+                    <h3>
+                        A comprehensive page of courses, color coded
+                    </h3>
+                    <p>
+                        TaskBuddy helps students by not only facilitating completion of assignments and tasks, but also by keeping semester courses, clubs, and other commitments <strong>accessible and organized</strong>. 
+                        In this one page, users can quickly reference their schedule to know when to head to their class or add a new category for a club they just joined. 
+                        Clicking on a class reveals a subpage where you can edit the class info and color, add links like a syllabus, and view tasks that belong to that category.
+                    </p>
+                    <img class="wrapped-img" src="./taskbuddy-media/tbud-final-2.png">
+                </div>
+                <div class="d-flex align-items-center tbud-vid-wrap" id="tbud-vid1">
+                    <video autoplay muted controls>
+                        <source src="./taskbuddy-media/add-delete.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <div class="tbud-vid-info">
+                        <img class="play-button" src="./taskbuddy-media/icon/lucide-play.svg" width="60px" height="60px">
+                        <div>
+                            <p>Adding a task is made easy on any page because of its placement on the nav.</p>
+                            <p>Made a mistake? No problem! Tasks can be easily edited or deleted anytime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center tbud-vid-wrap" id="tbud-vid2">
+                    <div class="tbud-vid-info">
+                        <img class="play-button" src="./taskbuddy-media/icon/lucide-play.svg" width="60px" height="60px">
+                        <div>
+                            <p>Usability testing showed that users consistently wanted the ability to complete tasks on all pages.</p>
+                            <p>TaskBuddy makes completing tasks possible whether you’re in the list view, calendar, etc. You can check a box or mark completion in task view.</p>
+                        </div>
+                    </div>
+                    <video autoplay muted controls>
+                        <source src="./taskbuddy-media/completetask.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="d-flex flex-column tbud-final-box">
+                    <h3>
+                        Offers motivation and encouragement for users
+                    </h3>
+                    <p>
+                        TaskBuddy shows messages of encouragement when users finish their tasks for the day, or when they don’t have any work, it reminds them to take care of themselves. Positive reinforcement and satisfaction is important when you’re working hard!
+                    </p>
+                    <img class="wrapped-img" src="./taskbuddy-media/tbud-final-3.png">
+                </div>
+                <div class="tbud-other-screens">
+                    <p>OTHER SCREENS</p>
+                    <div class="d-flex justify-content-between ">
+                        <img src="./taskbuddy-media/otherscreen-1.png">
+                        <img src="./taskbuddy-media/otherscreen-2.png">
+                        <img src="./taskbuddy-media/otherscreen-3.png">
+                        <img src="./taskbuddy-media/otherscreen-4.png">
+                        <img src="./taskbuddy-media/otherscreen-5.png">
+                        <img src="./taskbuddy-media/otherscreen-6.png">
+                    </div>
+                    
+                </div>  
+                </div>
+                
+            </div>
+            <!-- Reflection -->
+            <div class="tbud-reflect">
+                <h2 class="sect-title">REFLECTION <img src="./taskbuddy-media/icon/lucide-sprout.svg" width="30px" height="30px"></h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p>
+                        This was my first project using Figma, and there was definitely a huge learning curve since I was learning software tools as I was designing. I can now say I’m much more confident using the software, practicing atomic design, and prototyping and testing in it.
+                        <br><br>
+                        I referenced a lot of UI components used by Apple and Google that users are accustomed to in order to communicate what I wanted in buttons, text fields, etc. However, this experience has shown me to I have a lot to learn about about design systems and inspired me to look into industry standards.
+                    </p>
+                    <p class="d-none d-md-block tbud-reflect-emoji">
+                        👀🌟
+                    </p>
+                </div>
+            </div>
+            <!-- Next time -->
+            <div class="tbud-nexttime">
+                <h2 class="sect-title">NEXT TIME <img src="./taskbuddy-media/icon/lucide-send.svg"></h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p>
+                        In future projects, I would make sure to make more digital copies of my different iterations—especially medium-fidelity wireframes in the usability testing phase of the product—to record my iterative design process that I put a lot of research into.
+                        <br><br>
+                        I would also look more into other similar apps and perform competitive analyses, because I retrospectively have learned that seeing other designs trying to accomplish similar goals can teach us a lot!
+                    </p>
+                    <p class="d-none d-md-block tbud-reflect-emoji">
+                        🤓📚
+                    </p>
+                </div>
+            </div>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et magnis dis parturient. Congue nisi vitae suscipit tellus mauris a. Sed augue lacus viverra vitae congue eu consequat ac. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Amet massa vitae tortor condimentum lacinia quis vel. Odio pellentesque diam volutpat commodo sed egestas. Dignissim convallis aenean et tortor at risus viverra adipiscing. Eget egestas purus viverra accumsan in nisl. Accumsan in nisl nisi scelerisque eu ultrices vitae. Sed arcu non odio euismod lacinia at quis. Elementum nibh tellus molestie nunc non blandit massa enim nec.
-            </p>
-            <p></p>
-Integer eget aliquet nibh praesent tristique magna sit amet. Sagittis orci a scelerisque purus semper eget duis at tellus. Quis varius quam quisque id diam vel quam. Non odio euismod lacinia at quis. Pretium quam vulputate dignissim suspendisse in est ante in. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Faucibus interdum posuere lorem ipsum dolor sit. Malesuada nunc vel risus commodo. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Sagittis eu volutpat odio facilisis. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt.
-</p><p>
-Massa placerat duis ultricies lacus sed turpis tincidunt id. Sapien pellentesque habitant morbi tristique senectus. Condimentum vitae sapien pellentesque habitant morbi tristique. Ullamcorper malesuada proin libero nunc consequat. Egestas purus viverra accumsan in nisl. Volutpat commodo sed egestas egestas fringilla phasellus. Id consectetur purus ut faucibus pulvinar elementum. Eget duis at tellus at urna condimentum mattis pellentesque. Iaculis urna id volutpat lacus. Tempor nec feugiat nisl pretium fusce id.
-</p><p>
-Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Cras fermentum odio eu feugiat pretium nibh. Adipiscing elit pellentesque habitant morbi tristique. At varius vel pharetra vel turpis. Magna sit amet purus gravida quis. Phasellus egestas tellus rutrum tellus. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. Massa tincidunt dui ut ornare lectus sit amet. Venenatis cras sed felis eget velit. Amet consectetur adipiscing elit ut aliquam purus sit amet.
-</p><p>
-Felis bibendum ut tristique et egestas. Vel quam elementum pulvinar etiam non quam. Massa sapien faucibus et molestie ac feugiat. Pellentesque elit ullamcorper dignissim cras tincidunt. Ullamcorper morbi tincidunt ornare massa eget egestas. A diam sollicitudin tempor id eu. Viverra accumsan in nisl nisi scelerisque eu. Turpis massa tincidunt dui ut. Faucibus in ornare quam viverra orci. Sit amet est placerat in egestas. Est velit egestas dui id ornare arcu odio ut. Amet nulla facilisi morbi tempus. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Id diam maecenas ultricies mi.
-            </p>
+
+
+
         </div>
     </div>
     <footer class="footer-main">

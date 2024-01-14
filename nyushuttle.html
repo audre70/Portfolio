@@ -62,7 +62,7 @@
                   <p class="flip-item">Contact</p>
                   <p class="flip-item">Contact</p>
               </a></li>
-              <li class="nav-item flip-contain w76"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">
+              <li class="nav-item flip-contain w76"><a class="nav-link" href="#" target="_blank">
                   <p class="flip-item">Resume</p>
                   <p class="flip-item">Resume</p>
               </a></li>
@@ -72,26 +72,519 @@
           </ul>
           </div>
         </div>
-      </div>
-      <!-- modal for resume -->
-      <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+
+    <div class="project-page-wrap container-fluid">
+    <div class="nyushuttle-hero">
+        <img id="nyushuttle-hero-img" src="./project-media/nyushuttle-banner.png" alt="NYU shuttle thumbnail">
+    </div>
+    <div class="nyushuttle-content">
+        <div class="titlecard">
+            <h1>NYU Shuttles: Instant Transit Tracking & Guidance</h1>
+            <p class="proj-subtitle">An app redesign providing bus schedules and live location tracking, helping students get  around New York City efficiently.</p>
+            <div class="proj-info">
+                <div>
+                    <p class="purp info-cat">Timeline</p>
+                    <p>4 weeks (Nov-Dec 2023)</p>
+                </div>
+                <div>
+                    <p class="purp info-cat">Team of 3</p>
+                    <p>UX/UI Designer (me)</p>
+                    <p>Project Manager</p>
+                    <p>UX Researcher</p>
+                </div>
+                <div>
+                    <p class="purp info-cat">Disciplines</p>
+                    <p>UX/UI Design</p>
+                    <p>UX Research</p>
+                </div>
+                <div>
+                    <p class="purp info-cat">Tools</p>
+                    <p>Figma</p>
+                </div>
             </div>
-            <div class="modal-body">
-                <p>Click <a href="https://drive.google.com/file/u/2/d/1GLWdbjP0Xuh64C5RbYG63qgv4wK-c0Ts/view" target="_blank">this link</a> if resume is not loading.</p>
-                <iframe src="./media/AudreyVo_designResume.pdf" style="width: 100%; height: 700px;"></iframe>
-            </div>
-            <div class="modal-footer">
-            </div>
-          </div>
         </div>
-      </div>
+        
+        <!-- motivation -->
+        <div class="segment segment-split">
+            <div class="segment-title">
+                <h2 class="purp segment-underlined">MOTIVATIONS</h2>
+            </div>
+            <div class="segment-right">
+                <p>The shuttle section of the NYU Mobile app has been notorious for years due to its <strong>poorly designed UI</strong> and <strong>unreliability.</strong></p>
+                <p>Rather than an app specifically for NYU shuttles, the university uses an embedded webpage from the Passio GO app.</p>
+                <p>Unfortunately, many people are discouraged from taking the shuttles—a free resource that the university provides—due to difficulty with the UI, frustration with wait times, and high effort compared to alternatives like NYC subways. </p>
+                <p class="motiv-emoji">🚏🏃🏽🚦</p>
+            </div>
+        </div>
+        <!-- problem -->
+        <div>
+            <div class="segment segment-split">
+                <div class="segment-title">
+                    <h2 class="purp">PROBLEM</h2>
+                    <p class="purp segment-underlined">Understanding Product Vision</p>
+                </div>
+                <div class="segment-right">
+                    <div class="pgraph">
+                        <h3 class="purp">Users</h3>
+                        <p>NYU students and staff face difficulty finding key information about school shuttles such as schedules, live ETAs, routes, and stops.</p>    
+                    </div>
+                    <div class="pgraph">
+                        <h3 class="purp">Our Opportunity</h3>
+                        <p>People need quick, intuitive, and reliable shuttle bus tracking in order to effectively use NYU’s transit resource.
+                        <br><br>Since there is an existing UI that users can give feedback on, it provides a great starting point for us to learn from  🚀</p>    
+                    </div>
+                </div>
+            </div>
+            <div class="banner-emoji">
+                <p class="emoji">🤔</p>
+                <p>USERS FEEL CONFUSED AND FRUSTRATED LOOKING FOR SHUTTLES</p>
+                <p class="emoji">🤯</p>
+            </div>
+        </div>
+        
+        <!-- passiogo app store reviews -->
+        <div>
+            <div class="boxy-med">
+                <h3>EXISTING USER TESTIMONY</h3>
+                <div id="reviews-contain" class="d-flex">
+                    <img id="passiogo-reviews" class="wrapped-img" src="./project-media/passiogo-reviews.jpg" alt="passiogo reviews">
+                    <p>
+                        The App Store’s reviews give us a revealing window into grievances about Passio GO. With an overall score of <strong><a href="https://apps.apple.com/us/app/passio-go/id1203861956" target="_blank">1.3 out of 5 stars</a></strong> from <strong>over 350 ratings</strong>, it’s clear that the vast majority of users have an unpleasant experience and aren't able to accomplish their goals with ease.
+                    </p>
+                </div>
+            </div> 
+            <div class="quote-box">
+                <img class="quote-icon" src="./project-media/icons/gridicons_quote.svg">
+                <div class="boxy-small"><p>Controls/menu are very unclear and very disorganized.</p></div>
+                <div class="boxy-small"><p>The buttons are also difficult to press as they are very small.</p></div>
+                <div class="boxy-small"><p>Navigating around the map is impossible to do without accidentally triggering some menu.</p></div>
+                <div class="boxy-small"><p>The UI is not set up for iPhones making the notification banners awkward and difficult to utilize.</p></div>
+                <div class="boxy-small"><p>I just want to know when my bus is coming and this app makes things so much harder.</p></div>
+                <div class="boxy-small"><p>Worst app I’ve ever used for a mass transit system.</p></div>
+                <img class="quote-icon" src="./project-media/icons/gridicons_quote.svg">
+            </div>
+        </div>
+        
+        <!-- current design breakdown -->
+        <div>
+            <div class="segment">
+                <div class="segment-title">
+                    <h2 class="purp">THE CURRENT UI</h2>
+                    <p class="purp segment-underlined">Addressing the Immediate Issues</p>
+                </div>
+                <p>
+                    Before diving into user research, we can point out some usability issues in the current design that will be prioritized in our solution.
+                </p>
+            </div>
+            <div id="passiogo-breakdown">
+                <div class="d-flex">
+                    <div class="passiogo-screens">
+                        <img class="wrapped-img" src="./project-media/ogpassiogo-1.jpg">
+                    </div>
+                    <div class="boxy-med">
+                        <h3>UNCLEAR ROUTES</h3>
+                        <p>
+                            On the landing page, users are met with a map with all shuttle routes outlined—but the lines are very faint, thin, and hard to distinguish from one another.
+                        </p>
+                        <h3>COMPLEX TOGGLE ACTION</h3>
+                        <p>
+                            A toggle can help isolate a route, but it’s hidden in a hamburger that doesn’t intuitively indicate the action. When opened, a sidebar covers almost the whole screen and prevents the user from viewing the map—making it a tedious process to toggle + view routes.                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="boxy-med">
+                        <h3>UNUSABLE SEARCH</h3>
+                        <p>
+                            A search bar exists, but it doesn’t allow users to search addresses or destinations—only stop names, perfectly spelled.
+                        </p>
+                        <h3>EXCESS FEATURES</h3>
+                        <p>
+                            The map includes a number of options that have an unclear purpose, such as “satellite view,” “show traffic,” and “test mode,” which only seems to clutter the UI.
+                        <br><br>
+                            In addition to an alert banner, there is also a misleading chat icon that opens a notifications tab.
+                        </p>
+                    </div>
+                    <div class="passiogo-screens">
+                        <img class="wrapped-img" src="./project-media/ogpassiogo-2.jpg">
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <!-- user discovery interviews -->
+        <div class="shuttle-user-research">
+            <div class="segment segment-split">
+                <div class="segment-title">
+                    <h2 class="purp">USER RESEARCH</h2>
+                    <p class="purp segment-underlined">Understanding Our Audience</p>
+                </div>
+                <div class="segment-right">
+                    <p>
+                        We conducted interviews with 8 current and former users of NYU shuttles with the current app in front of them to get a deeper understanding of our problem.
+                    </p>
+                </div>
+            </div>
+            <p><em>*I contributed to this research in both planning and conducting user discovery interviews</em></p>
+            <div class="boxy-lg">
+                <h3 class="purp">Key Insights</h3>
+                <p>We found that users tended to travel to and from their apartments/dorms and NYU buildings, but sometimes also to other destinations like stores or friends’ apartments.</p>
+                <div class="d-flex shuttle-research-proscons">
+                    <div class="proscons">
+                        <h3>Dislikes & Frustrations 😐</h3>
+                        <ul>
+                            <li>Needing to use multiple apps for  sufficient info (Passio GO, Google Sheets for shuttle schedules, Google or Apple Maps for traffic)</li>
+                            <li>No user guidance to destinations, causing them to feel overwhelmed</li>
+                            <li>Unnecessary, confusing, or unexpected features</li>
+                        </ul>
+                    </div>
+                    <svg class="d-none d-sm-block" xmlns="http://www.w3.org/2000/svg" width="20" height="400" viewBox="0 0 10 398" fill="none">
+                        <path d="M5 5L4.99998 393" stroke="url(#paint0_linear_930_1081)" stroke-width="9" stroke-linecap="round"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_930_1081" x1="5" y1="393" x2="5.00001" y2="26.0765" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#5582FF"/>
+                        <stop offset="1" stop-color="#DACCF9"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="proscons">
+                        <h3>Liked Features 🌈 </h3>
+                        <ul>
+                            <li>Color coding and instant route visualization when app is opened</li>
+                            <li>Live tracking of upcoming shuttles</li>
+                            <li>Toggle / ability to view routes in isolation, although many users voiced that it could be improved</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="purp">Core Issues: Discoverability & Usability</h3>
+                <p>
+                    The majority of users are only occasional riders of the shuttles who cite both the inconsistency of the physical shuttles and the confusing app as reasons why they don’t use it more.
+                </p>
+                <p>
+                    When asked about features they’d like in an ideal shuttle app, users listed many already-existing tools (route toggle, search, set a destination) that were either nonfunctional or that they didn’t realize were there. This emphasizes how crucial discoverability will be as we brainstorm design solutions for our problem.
+                </p>
+            </div>
+        </div>
+        <!-- interview questions -->
+        <div class="shuttle-interview-prev">
+            <div class="segment segment-title">
+                <h2 class="purp">INTERVIEW PREVIEW</h2>
+            </div>
+            <div class="d-flex">
+                <div class="boxy-med">
+                    <p>
+                        Do you take the NYU shuttles? Where do you typically take them? How often?
+                    </p>
+                    <p>
+                        Where do you get information to take the shuttles? How effective are they in helping you?
+                    </p>
+                    <p>
+                        Is there anything you wish was in the shuttle bus app that’s missing?
+                    </p>
+                </div>
+                <div class="interview-notes">
+                    <img class="wrapped-img" src="./project-media/shuttle-interview-notes.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- brainstorming solution -->
+        <div class="shuttle-ideating-solution">
+            <div class="segment">
+                <div class="segment-title">
+                    <h2 class="purp">IDEATING A SOLUTION</h2>
+                    <p class="purp segment-underlined">Using Data to Inform the Product</p>
+                </div>
+            </div>
+            
+            <div class="boxy-lg">
+                <h3 class="purp">Brainstorming</h3>
+                <div>
+                    <div class="brainstorm-wrap">
+                        <div class="brainstorm-25">
+                            <img class="wrapped-img" src="./project-media/shuttle-brainstorm.jpg">
+                        </div>
+                        <div class="boxy-med">
+                            <p>
+                                My team of 3 engaged in an ideation exercise where we generated 25 unique ideas—big and small—to solve our problem at hand.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="boxy-med">
+                        <p>
+                            Recognizing that much of users’ comfort and ease can be aided with familiarity of a product, we researched popular transit apps and their interfaces to get inspiration from design elements that have been extensively tested and shown to work for people.
+                            <br><br>
+                            We referenced the apps <strong>Citymapper, Google Maps, Transit and Apple Maps</strong>.
+                        </p>
+                    </div>
+                </div>
+                <div class="shuttle-app-inspo">
+                    <img src="./project-media/appinspo.png">
+                </div>
+                <h3 class="purp">Rough Sketches & Ideation</h3>
+                <div class="shuttle-wireframes">
+                    <img src="./project-media/shuttle-wireframe-1.jpg">
+                    <img src="./project-media/shuttle-wireframe-2.jpg">
+                    <img src="./project-media/shuttle-wireframe-3.jpg">
+                </div>
+                <h3 class="purp">User Flow</h3>
+                <div class="user-flow">
+                    <img class="wrapped-img" src="./project-media/shuttle-userflow.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- paper prototype / usability testing -->
+        <div>
+            <div class="segment segment-split">
+                <div class="segment-title">
+                    <h2 class="purp">USABILITY TESTING</h2>
+                    <p class="purp segment-underlined">Paper Prototype Testing</p>
+                </div>
+                <div class="segment-right">
+                    <p>
+                        To validate our design ideas before moving forward to higher-fidelity prototypes, we decided to conduct some user testing with paper prototypes to ensure that we were meeting our goals.
+                    </p>
+                </div>
+            </div>
+            <p><em>*This testing was conducted by me with the the researcher taking notes during interviews.</em></p>
+            <div>
+                <div class="d-flex shuttle-pproto-insights">
+                    <div class="boxy-med">
+                        <h3>What worked for users  🙌</h3>
+                        <ul>
+                            <li>Redesigned toggle (now a horizontal scrollable header directly on the map)</li>
+                            <li>Shuttle schedule button</li>
+                            <li>Intuitive screen icons</li>
+                            <li>Color coded routes</li>
+                            <li>Familiarity of UI to other map/transit apps</li>
+                        </ul>
+                    </div>
+                    <div class="boxy-med">
+                        <h3>Feedback for next iteration 🔄</h3>
+                        <ul>
+                            <li>Implement inactive and active button states</li>
+                            <li>Emphasize that toggle buttons are interactive/clickable</li>
+                            <li>Simplify transit options (keep focus on NYU shuttles rather than all public transportation like MTA to avoid confusion)</li>
+                            <li>Stronger NYU theme + colors</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column boxy-lg shuttle-pproto">
+                    <img src="./project-media/papproto-1.jpg">
+                    <img src="./project-media/papproto-2.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- solution / priorities -->
+        <div class="shuttle-solutions segment segment-split">
+            <div class="segment-title">
+                <h2 class="purp">SOLUTION</h2>
+                <p class="purp segment-underlined">Our Central Priorities</p>
+            </div>
+            <div class="segment-right">
+                <p>
+                    🗓 Accessible Shuttle Schedule
+                    <br>
+                    📍 Pre-Set NYU Location Options
+                    <br>
+                    🧭 Full Travel Guide from Start → Finish
+                    <br>
+                    💡 Readability & Discoverability
+                </p>
+            </div>
+        </div>
 
-
+        <!-- final product screens -->
+        <div>
+            <div class="segment">
+                <div class="segment-title">
+                    <h2 class="purp segment-underlined">FINAL PRODUCT</h2>
+                </div>
+            </div>
+            <div class="d-flex flex-column shuttle-finalscreens">
+                <div class="d-flex justify-content-between shuttle-finalscreen-wrap">
+                    <div class="d-flex finalscreen">
+                        <img src="./project-media/screen-landing1.png">
+                        <img src="./project-media/screen-landing2.png">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center final-screen-description">
+                        <h3>Landing Page</h3>
+                        <p>
+                            The landing screen features a map with all routes outlined in different colors, a bottom sheet with a search bar, and a header with a toggle and schedule button.
+                        </p>
+                        <p>
+                            Expanding the bottom sheet reveals a list of suggested NYU destinations for optimal convenience.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between shuttle-finalscreen-wrap">
+                    <div class="d-flex flex-column justify-content-center final-screen-description">
+                        <h3>Route Toggle & Live Tracking</h3>
+                        <p>
+                            There are 2 methods to toggle/emphasize a route: clicking on the route itself or interacting with the header buttons. Users can even visualize multiple routes.
+                        </p>
+                        <p>
+                            The toggled state offers a more detailed view with stops, which you can expand to view details about upcoming shuttle arrivals.
+                        </p>
+                    </div>
+                    <div class="d-flex finalscreen">
+                        <img src="./project-media/screen-togglea.png">
+                        <img src="./project-media/screen-toggleac.png">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between shuttle-finalscreen-wrap">
+                    <div class="d-flex finalscreen">
+                        <img src="./project-media/screen-journey-results.png">
+                        <img src="./project-media/screen-journey.png">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center final-screen-description">
+                        <h3>Comprehensive Journey Guide</h3>
+                        <p>
+                            A toggled route offers a more detailed view with stops. Clicking one triggers open a popup with the stop name along with upcoming shuttle arrivals.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center shuttle-finalvid-wrap">
+                    <video autoplay muted controls>
+                        <source src="./project-media/searchnjourney.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <div class="d-flex flex-column justify-content-center shuttle-video-descript">
+                        <img class="play-button" src="./project-media/icons/lucide_play-circle.svg" width="60px" height="60px"> 
+                        <h3>Refined Search Engine</h3>
+                        <p>
+                            We updated the search mechanism and added a recent search history to reflect more conventional flows and create a stress-free, familiar experience for users.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center shuttle-finalvid-wrap">
+                    <video autoplay muted controls>
+                        <source src="./project-media/schedule.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <div class="d-flex flex-column justify-content-center shuttle-video-descript">
+                        <img class="play-button" src="./project-media/icons/lucide_play-circle.svg" width="60px" height="60px">
+                        <h3>Integrated Shuttle Schedules</h3>
+                        <p>
+                            We solved one of the most common frustrations for users—having to open Google Sheets alongside the shuttle app—by making shuttle schedules accessible in-app through a nav icon on the landing page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- accessibility -->
+        <div>
+            <div class="segment segment-split">
+                <div class="segment-title">
+                    <h2 class="purp">ACCESSIBILITY</h2>
+                    <p class="purp segment-underlined">Accommodating Colorblind Users</p>
+                </div>
+                <div class="segment-right">
+                    <p>
+                        In a transit app that relies heavily on color to communicate important information, it was essential that we considered accessibility in our choices.
+                    </p>
+                    <p>
+                        Using the Colorblindly Chrome plugin, we viewed our shuttle route colors in various colorblind filters to ensure that they were both <strong>high contrast</strong> on the map and <strong>differentiated</strong> from one another.
+                    </p>
+                    <p>
+                        We were also fortunate enough to test our prototype on 2 colorblind users whose feedback helped us iterate.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between shuttle-accessibility-col">
+                <div class="boxy-med">
+                    <h3>Old colors (Passio GO)</h3>
+                    <img src="./project-media/shuttle-access-old.png">
+                </div>
+                <div class="boxy-med">
+                    <h3>Updated colors</h3>
+                    <img src="./project-media/shuttle-access-new.png">
+                </div>
+            </div>
+        </div>
+        <!-- style guide -->
+        <div class="shuttle-style-guide">
+            <div class="segment">
+                <div class="segment-title">
+                    <h2 class="purp segment-underlined">STYLE GUIDE</h2>
+                </div>
+                <p>
+                    We adhered to NYU’s style guide for this design, adding accent colors where it was necessary for understanding. Montserrat is the free alternative for NYU’s primary typeface, Gotham.
+                </p>
+            </div>
+            <div class="d-flex shuttle-styles">
+                <div>
+                    <img class="wrapped-img" src="./project-media/shuttle-colors.png">
+                </div>
+                <div class="d-flex flex-column">
+                    <div>
+                        <img class="wrapped-img" src="./project-media/shuttle-typeface.png">
+                    </div>
+                    <div>
+                        <img class="wrapped-img" src="./project-media/shuttle-icons.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- before after -->
+        <div>
+            <div class="shuttle-bef-aft">
+                <div class="segment">
+                    <div class="segment-title">
+                        <h2 class="purp segment-underlined">BEFORE & AFTER OF THE UI</h2>
+                    </div>
+                </div>
+                <div class="boxy-med">
+                    <div class="pgraph">
+                        <h3>PREVIOUS SCREENS</h3>
+                        <div class="d-flex justify-content-between">
+                            <img src="./project-media/passioscreen1.jpg">
+                            <img src="./project-media/passioscreen2.jpg">
+                            <img src="./project-media/passioscreen3.jpg">
+                            <img src="./project-media/passioscreen4.jpg">
+                            <img src="./project-media/passioscreen5.jpg">
+                        </div> 
+                    </div>
+                    <div class="pgraph">
+                        <h3>THE GLOW UP 🤩✨</h3>
+                        <div class="d-flex justify-content-between">
+                            <img src="./project-media/shuttle-screen1.png">
+                            <img src="./project-media/shuttle-screen2.png">
+                            <img src="./project-media/shuttle-screen3.png">
+                            <img src="./project-media/shuttle-screen4.png">
+                            <img src="./project-media/shuttle-screen5.png">
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div> 
+            <!-- quote box -->
+            <div class="quote-box shuttle-feedback">
+                <img class="quote-icon" src="./project-media/icons/gridicons_quote.svg">
+                <div class="boxy-small"><p>I would totally use this, it’s so much better than what we have.</p></div>
+                <div class="boxy-small"><p>We should get a dev team on this.</p></div>
+                <div class="boxy-small"><p>I want this in NYU’s app so I can use it every day.</p></div>
+                <img class="quote-icon" src="./project-media/icons/gridicons_quote.svg">
+            </div>
+        </div>
+        <!-- reflection -->
+        <div class="segment">
+            <div class="segment-title">
+                <h2 class="purp segment-underlined">REFLECTION ⚡️</h2>
+            </div>
+            <p>
+                This project was conducted during finals week, so time constraints unfortunately won this time. But, given more time on this redesign project, I would have seized the opportunity to do more research into prototyping designs on maps.
+            </p>
+            <p>
+                There was a fair amount of restriction associated with Figma’s toolbox when it came to prototyping this project. While I wanted to implement many of the common map interactions like zooming in and out, many were not possible or optimized in the Figma software. By gathering more information, we could gain insights from industry best practices regarding map UI prototyping and identify potential areas to learn and grow from. It would also help us further develop screens associated with the map in a more efficient, effective way.
+            </p>
+            <p>
+                Furthermore, I would have loved to conduct further testing, especially in the higher-fidelity prototyping stage. This could include usability testing or surveys to gain a deeper understanding of users’ preferences or additional features they want’d to see in a redesign. This user-centric approach would provide valuable insights for prioritizing design enhancements and aligning the redesign more closely with user needs and expectations.
+            </p>
+        </div>
+    </div>
+    </div>
       
     <footer class="footer-main">
         <div class="footer-wrap container-fluid">
@@ -119,7 +612,7 @@
                         <p class="flip-item">Contact</p>
                         <p class="flip-item">Contact</p>
                     </a></li>
-                    <li class="nav-item flip-contain w76"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                    <li class="nav-item flip-contain w76"><a class="nav-link" href="#" target="_blank">
                         <p class="flip-item">Resume</p>
                         <p class="flip-item">Resume</p>
                     </a></li>
