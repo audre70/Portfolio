@@ -468,11 +468,9 @@ body#contact-page {
 .contact-jumbotron-wrap {
     margin-top: 86px; /* for fixed navbar */
     padding: 0 5.75rem 0 7rem;
-    /* height: 70vh;
-    max-height: 702px; */
-    /*  */
-    height: 100vh;
-    min-height: 800px;
+    height: 70vh;
+    max-height: 702px;
+    margin-bottom: 10rem; /* added when there is no contact form */
 }
 .contact-jumbotron {
     display: flex;
@@ -480,9 +478,6 @@ body#contact-page {
     height: 100%
 }
 .connect-container {
-    height: 70vh;
-    max-height: 702px;
-    /*  */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1327,10 +1322,10 @@ p.motiv-emoji {
     padding-bottom: 1.5rem;
 }
 .brainstorm-wrap .brainstorm-25 {
-    flex: 3;
+    flex: 2;
 }
 .brainstorm-wrap .boxy-med {
-    flex: 2;
+    flex: 1;
 }
 
 .shuttle-app-inspo {
@@ -2157,6 +2152,11 @@ li.tbud-lheight-shorter {
         line-height: 1.5rem;
         margin-bottom: 2rem;
     }
+    .tbud-contain p,
+    .tbud-contain li {
+        font-size: 1rem;
+        line-height: 1.8rem; /* 188.889% */
+    }
     .tbud-contain p.proj-subtitle {
         font-size: 1.1rem;
         line-height: 2rem;
@@ -2176,6 +2176,10 @@ li.tbud-lheight-shorter {
     .tbud-wireframe-feedback {
         padding: 0 0 2rem 0;
     }
+    .tbud-interview-insights p,
+    .tbud-wireframe-feedback p {
+        line-height: 1.55rem;
+    }
     .tbud-contain h4 {
         margin-bottom: 1rem;
     }
@@ -2194,6 +2198,7 @@ li.tbud-lheight-shorter {
         border-radius: 1rem;
     }
     .tbud-prob-statement p {
+        font-weight: 600;
         font-size: 1rem;
         line-height: 1.5rem;
     }
@@ -2221,11 +2226,17 @@ li.tbud-lheight-shorter {
         border-radius: 1rem;
         padding: 1.75rem 1.5rem;
     }
+    .tbud-contain .mid-proto-wrapper {
+        gap: 2rem;
+    }
     .tbud-finalprod-wrap {
         gap: 3rem;
     }
     .tbud-final-screens {
         gap: 3rem;
+    }
+    .tbud-contain .play-button {
+        margin-bottom: 1.5rem;
     }
     .tbud-vid-info div {
         padding: 1.75rem 1.5rem;
