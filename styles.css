@@ -2177,7 +2177,8 @@ li.tbud-lheight-shorter {
         padding: 0 0 2rem 0;
     }
     .tbud-interview-insights p,
-    .tbud-wireframe-feedback p {
+    .tbud-wireframe-feedback p,
+    .tbud-wireframe-decisions p {
         line-height: 1.55rem;
     }
     .tbud-contain h4 {
