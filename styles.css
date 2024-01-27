@@ -804,6 +804,7 @@ body#play-page {
 }
 .play-page-wrap {
     margin-top: 86px; /* for fixed navbar */
+    margin-bottom: 3rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -951,9 +952,6 @@ body#play-page {
         top: 2.5rem;
         right: -1.3rem;
     }
-    .lg-proj, .md-proj, .sm-proj {
-        padding-bottom: 3rem;
-    }
     .md-proj, .sm-proj {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -996,7 +994,7 @@ body#play-page {
 }
 @media (max-width: 576px) {
     .play-header {
-        margin-top: 6rem;
+        margin: 5rem 0 3.5rem 0;
     }
     #play-title-card p {
         font-size: 2.4rem;
@@ -1023,22 +1021,29 @@ body#play-page {
         padding: 0.4rem 0.9rem;
         margin-bottom: .3rem;
     }
-    .still-lifes {
-        flex-direction: column;
+    /*  */
+    .play-proj {
+        border-radius: .7rem;
     }
-    .still-lifes .lg-proj {
-        width: 100%;
+    .lg-proj, .md-proj, .sm-proj, .still-lifes .lg-proj {
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: .7rem;
+    }
+    /* .still-lifes {
+        flex-direction: column;
     }
     .play-col-1,
     .play-col-2, 
     .play-col-3,
-    .play-col-4 {
+    .play-col-4,
+    .still-lifes .lg-proj {
         width: 100%;
     }
     .play-col-1,
     .play-col-2 {
         justify-content: start;
-    }
+    } */
 }
 /* ------------------------
 -------- PROJECT PAGES --------
