@@ -1028,7 +1028,7 @@ body#play-page {
     .lg-proj, .md-proj, .sm-proj, .still-lifes .lg-proj {
         padding-left: .5rem;
         padding-right: .5rem;
-        padding-bottom: .7rem;
+        padding-bottom: 1.1rem;
     }
     /* .still-lifes {
         flex-direction: column;
