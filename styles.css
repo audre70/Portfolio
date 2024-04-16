@@ -649,16 +649,17 @@ body#about-page {
 #aboutme-1,
 #aboutme-2 {
     display: flex;
-    /* gap: 6.25rem; */
-    gap: 7.6rem;
+    gap: 7.8rem;
 } 
 #vibes { display: flex; justify-content: space-between; }
 .about-page-wrap h2,
 .about-page-wrap h3 {
-    text-transform: uppercase; font-weight: 300;
+    text-transform: uppercase; 
+    font-weight: 300;
+    letter-spacing: 0.1em;
 }
 .about-page-wrap h2 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-bottom: 2rem;
 }
 
@@ -666,10 +667,10 @@ body#about-page {
     border-radius: 1.25rem;
 }
 #bio-1 {
-    max-width: 520px;
+    flex: 4;
 }
 #bio-2 {
-    max-width: 560px;
+    flex: 4;
 }
 .spotify-songs {
     max-width: 550px;
@@ -677,8 +678,12 @@ body#about-page {
 .spotify-songs iframe {
     margin-bottom: .5rem;
 }
-img#audrey-1 { width: 363.92; height: 450px; }
-img#audrey-2 { width: 340px; height: 453px; }
+.about-page-wrap .wrapped-img {
+    width: 100%;
+}
+#audrey-1, #audrey-2 { 
+    flex: 3;
+}
 img#link-zelda {
     width: 240px;
     height: 240px;
@@ -730,13 +735,27 @@ img#link-zelda {
 /* ----------------------------
 ---- ABOUT PAGE MEDIA QUERY ---
 ------------------------------- */
-@media (max-width: 1024px) {
-    #aboutme-1,
-    #aboutme-2 {
-        gap: 3rem;
+@media (max-width: 1200px) {
+    .about-page-wrap .container-fluid {
+        padding: 0 3.5rem;
     }
-    img#audrey-1 { width: 305.6px; height: 360px; }
-    img#audrey-2 { width: 272px; height: 362.4px; }
+    .about-page-wrap #aboutme-1,
+    .about-page-wrap #aboutme-2 {
+        gap: 6rem;
+    }
+}
+@media (max-width: 1024px) {
+    .about-page-wrap #aboutme-1,
+    .about-page-wrap #aboutme-2 {
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+    #bio-1, #bio2 {
+        flex: 3;
+    }
+    #audrey-1, #audrey-2 { 
+        flex: 2;
+    }
     img#link-zelda {
         display: none;
     }
@@ -748,13 +767,9 @@ img#link-zelda {
     .about-page-wrap #vibes {
         padding: 2rem 5rem;
     }
-        .about-page-wrap #aboutme-1,
-        .about-page-wrap #aboutme-2 {
-            margin-bottom: 4rem;
-        }
-        .about-page-wrap #vibes {
-            margin-bottom: 7rem;
-        }
+    .about-page-wrap #vibes {
+        margin-bottom: 7rem;
+    }
 }
 @media (max-width: 767px) {
     .about-page-wrap {
