@@ -393,12 +393,27 @@ body#home-page {
     justify-content: start;
 }
 .featured-thumb-wrap {
+    position: relative; /* for the hover overlay arrow */
     border-radius: 1.5rem;
     overflow: hidden;
+}
+.featured-thumb-wrap .featured-hover-redirect {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 55px;
+    height: 55px;
+    left: 25px;
+    top: 25px;
+    transition: .3s ease-out;
 }
 img.proj-thumbnail {
     width: 100%;
     transition: .3s ease-out;
+}
+.featured-container:hover .featured-thumb-wrap .featured-hover-redirect {
+    transform: rotate(-45deg);
+    opacity: 1;
 }
 .featured-container:hover img.proj-thumbnail {
     transform: scale(1.03);
