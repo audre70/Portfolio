@@ -212,6 +212,14 @@ a#menu-icon .bar {
         padding: 0 !important;
     }
 }
+@media (max-width: 576px) {
+    .navbar-brand {
+        margin-left: 1.5rem;
+    }
+    .navbar-toggler {
+        margin-right: .5rem;
+    }
+}
 
 /* ----------------------
 ----------FOOTER --------
@@ -463,7 +471,8 @@ img.proj-thumbnail {
     }
     .home-jumbotron {
         height: 92vh;
-        padding: 0 2rem;
+        padding: 0 1.5rem;
+        /* ...... */
     }
     .welcome h2 {
         font-size: 3.1rem;
