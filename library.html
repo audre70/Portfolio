@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- material symbol -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="./media/av-favicon.png">
+
+    <title>Audrey Vo</title>
+  </head>
+
+  <body class="p-0 m-0 border-0" id="library-page">
+    <!-- BOOTSTRAP NAVBAR -->
+    <div class="navbar navbar-expand-md bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+              <a href="./index.html" class="flip-contain w83">
+                  <p class="flip-item">audrey</p>
+                  <p class="flip-item">audrey</p>
+              </a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="#navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+          >
+            <a href="#" id="menu-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </a>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+          <ul class="navbar-nav d-flex align-items-center">
+              <li class="nav-item d-md-none"><a class="nav-link" href="./index.html">
+                  <p>Home</p>
+              </a></li>
+              <li class="nav-item flip-contain w40"><a class="nav-link" href="./play.html">
+                  <p class="flip-item">Play</p>
+                  <p class="flip-item">Play</p>
+              </a></li>
+              <li class="nav-item flip-contain w90"><a class="nav-link" href="./about.html">
+                  <p class="flip-item">About Me</p>
+                  <p class="flip-item">About Me</p>
+              </a></li>
+              <li class="nav-item flip-contain w76"><a class="nav-link" href="./contact.html">
+                  <p class="flip-item">Contact</p>
+                  <p class="flip-item">Contact</p>
+              </a></li>
+              <li class="nav-item flip-contain w76"><a class="nav-link" href="https://drive.google.com/file/d/1mV_lZ5mivO7va8ISvqSaNdLUXLR6sNs4/view?usp=sharing" target="_blank">
+                  <p class="flip-item">Resume</p>
+                  <p class="flip-item">Resume</p>
+              </a></li>
+              <li class="mobile-hide"><a href="https://linkedin.com/in/audrey-vo" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="36" viewBox="0 0 448 512"><path fill="white" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+              </a></li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <!-- page content -->
+    <div class="project-page-wrap container-fluid library-wrap">
+        <div class="library-hero img-wrap">
+            <img src="./iheart-library/iheart-library-thumb2.jpg" alt="iHeart Library project thumbnail">
+        </div>
+        <div class="library-content d-flex flex-column">
+            <div>
+                <h1>iHeartMedia | Library Redesign for iOS Rewrite</h1>
+                <p id="library-info"><strong>INTERNSHIP || </strong>Improved personalization and organization in the iHeart app library 
+                    for saved radio, podcast, and music content to increase engagement and listening.</p>
+                <div class="library-details d-flex justify-content-between">
+                    <div>
+                        <p>Duration</p>
+                        <p>
+                            5 weeks<br>
+                            Jul-Aug 2024
+                        </p>
+                    </div>
+                    <div>
+                        <p>Team</p>
+                        <p>
+                            Me (UXD Intern)<br>
+                            Aj Karaca (UX Lead)<br>
+                            Kimberly Hall (PM)<br>
+                            iOS Engineers                            
+                        </p>
+                    </div>
+                    <div>
+                        <p>Disciplines</p>
+                        <p>
+                            UX Design<br>
+                            UX Research<br>
+                            Product Research                          
+                        </p>
+                    </div>
+                    <div>
+                        <p>Tools</p>
+                        <p>
+                            Figma<br>
+                            UserTesting<br>
+                            Adobe Analytics<br>
+                            Excel                         
+                        </p>
+                    </div>
+                </div>
+                <div class="iheart-appstore-wrap d-flex justify-content-around align-items-center">
+                    <div class="d-flex appstore-cluster align-items-center">
+                        <div class="img-wrap"><img src="./iheart-library/iheart-app.png"></div>
+                        <div class="img-wrap"><a href="https://apps.apple.com/us/app/iheart-radio-podcasts-music/id290638154" target="_blank"><img src="./iheart-library/appstore.png"></a></div>
+                    </div>
+                    <p class="iheart-nda">Parts of this project are hidden under NDA</p>
+                </div>
+            </div>
+            <!-- CORE EXPERIENCES -->
+            <div class="d-flex split-section">
+                <div class="header-ul-wrap"><h2 class="header-ul">CORE EXPERIENCES</h2></div>
+                <div class="split-right">
+                    <p>
+                        During my internship, I partnered with another UX designer in a design sprint that aimed to 
+                        improve the Library experience on the iHeart app. I led the cross-functional collaboration 
+                        between product management, UX research, engineers, and analytics to deliver a design proposal
+                         for development.
+                    </p>
+                    <p class="library-respons">
+                        <strong>Design responsibilities:</strong> Wireframing, UX Audit, Competitive Analysis, Low to Hi-Fi Prototyping
+                        <br><br>
+                        <strong>Research responsibilities:</strong> Research Planning, Unmoderated Testing, Quantitative Analysis, Qualitative Analysis
+                    </p>
+                </div>
+            </div>
+            <!-- MOTIVATIONS -->
+            <div>
+                <div class="d-flex split-section"> 
+                    <div class="header-ul-wrap">
+                        <h2>MOTIVATIONS</h2>
+                        <p class="header-ul">Why redesign the Library?</p>
+                    </div>
+                    <div class="split-right">
+                        <p>
+                            iHeart’s engineering team is undergoing an initiative to rewrite the mobile app in Swift for an 
+                            improved infrastructure to repair bugs and add new components. The UX team therefore is using 
+                            the opportunity to <strong>improve key areas of the app</strong>, including Library.
+                            <br><br>
+                            Before identifying the problem, it was important to document the current experience 
+                            and the audio content types we need to consider.
+                        </p>
+                    </div>
+                </div>
+                <div class="iheart-content-offerings img-wrap">
+                    <img class="d-none d-sm-block" src="./iheart-library/iheart-content-offerings.png">
+                    <img class="d-block d-sm-none" src="./iheart-library/iheart-content-offerings2.png">
+                </div>
+            </div>
+            <!-- CURRENT EXPERIENCE -->
+            <div class="library-current-ux">
+                <h3>The Current Experience on iHeart Platforms</h3>
+                <div class="d-flex flex-column cluster-16">
+                    <div class="contain-sm">
+                        <h4>CURRENT IOS</h4>
+                        <div class="img-wrap"><img src="./iheart-library/current-ios-experience.png"></div>
+                    </div>
+                    <div class="d-flex cluster-16 current-ux-row2">
+                        <div class="d-flex flex-column justify-content-between contain-sm">
+                            <h4>WEB POLARIS (BETA)</h4>
+                            <ul>
+                                <li>Dedicated library page with tab-style organization</li>
+                                <li>Stations is split into live radio and artists, with the former being the default main view</li>
+                                <li>Inconsistent, unclear sorting</li>
+                            </ul>
+                            <div class="img-wrap"><img src="./iheart-library/polaris-experience.png"></div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between contain-sm">
+                            <h4>WEB LEGACY</h4>
+                            <ul>
+                                <li>Dedicated library page with list directory leading to subpages of library content separated by content type</li>
+                                <li>Recently Played section on Library main page instead of Home</li>
+                                <li>Inconsistent sorting</li>
+                            </ul>
+                            <div class="img-wrap"><img src="./iheart-library/legacyweb-experience.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PROBLEM -->
+            <div class="library-problem d-flex flex-column">
+                <div class="d-flex split-section">
+                    <div class="header-ul-wrap">
+                        <h2>PROBLEM</h2>
+                        <p class="header-ul">Understanding Product Vision</p>
+                    </div>
+                    <div class="split-right d-flex flex-column">
+                        <div>
+                            <h3>iHeart Users</h3>
+                            <p>
+                                Library is an area of the iHeart app that is widely neglected. Users face difficulty efficiently
+                                accessing and organizing content they have saved.
+                            </p>  
+                        </div>
+                        <div>
+                            <h3>Our Opportunity</h3>
+                            <p>
+                                People need a dedicated space for their saved and created content that is tailored to reflect 
+                                their interests, preferences, and unique interactions. It should be engaging and easy to navigate,
+                                organize, and manage based on user preferences.
+                                <br><br>
+                                Since we have tracked analytics and pool of existing research, it gives us a great starting point
+                                to learn from 🚀
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrap">
+                    <img class="d-none d-sm-block" src="./iheart-library/problem.png">
+                    <img class="d-block d-sm-none" src="./iheart-library/problem2.png">
+                </div>
+                <div class="d-flex flex-column justify-content-center library-quant">
+                    <div>
+                        <h4>QUANTITATIVE DATA</h4>
+                        <p>From our iOS data gathered on Adobe Analytics from June to July 2024, we uncovered that:</p>
+                    </div>
+                    <div class="img-wrap"><img src="./iheart-library/quant-analytics.png"></div>
+                </div>
+                <div class="contain-lg d-flex flex-column cluster-56">
+                    <div>
+                        <h3>Library gets very little engagement</h3>
+                        <p>
+                            Few of our unique visitors, only 9.5%, have something saved in Library. Within that group, the vast 
+                            majority have very little saved — around <strong>82% have between 1-3 assets</strong>. This indicates 
+                            there is something about Library that is <strong>not enticing users to save more</strong>.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>The high CTR of Recently Played demonstrates potential for Library growth</h3>
+                        <div class="d-flex">
+                            <p>
+                                The Recently Played carousel and Library both serve as areas on Home where users can access content
+                                they have previously played or demonstrated interest in that are not associated with content discovery.
+                                <br><br>
+                                <em>Recently Played has a CTR above 75%, while the Library entry points’ CTRs are all below 15%.</em>
+                                <br><br>
+                                This discrepancy suggests that Library is an <strong>area of potential</strong> where we can 
+                                <strong>offer what users are seeking</strong> as shown by Recently Played.
+                            </p>
+                            <div class="img-wrap"><img src="./iheart-library/ctr.png"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>⚠️ Note to consider</h3>
+                        <p>
+                            The metrics discussed here can be explained by a variety of reasons (e.g. how users save content, feedback when saving content, the Library 
+                            entry point, or even a combination of multiple) beyond just the internal organization/design of Library. For this particular initiative, our 
+                            scope was the latter. Although this data cannot exactly identify the root cause of the low engagement, it still provides useful directional 
+                            insights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- LIBRARY FEEDBACK -->
+            <div class="d-flex flex-column library-feedback">
+                <div>
+                    <div class="header-ul-wrap">
+                        <h2 class="header-ul">USER FEEDBACK</h2>
+                    </div>
+                    <p>
+                        I also reviewed user feedback through data.ai and App Store reviews to gain insights into user pain points and areas of 
+                        confusion concerning the Library.
+                        <br><br>
+                        Common threads included the <strong>(1) difficulty of getting to saved content</strong> and <strong>(2) how cluttered 
+                        Library is</strong>. Users mentioned the order of displayed content not being relevant to their wants and the excessive
+                        number of taps needed to reach assets. We also observed a frequent mismatch in mental models, as even some users 
+                        failed to locate certain content (e.g. Artists, Downloads).
+                    </p>
+                </div>
+                <div class="img-wrap">
+                    <img class="d-none d-sm-block" src="./iheart-library/feedback.png">
+                    <img class="d-block d-sm-none" src="./iheart-library/feedback2.png">
+                </div>
+            </div>
+            <!-- EXISTING UX RESEARCH -->
+            <div class="d-flex library-existresearch">
+                <div>
+                    <div class="header-ul-wrap">
+                        <h2 class="header-ul">EXISTING UX RESEARCH</h2>
+                    </div>
+                    <p>
+                        The UX Research Guild documented findings about the current app that <strong>underscored the difficulties</strong> described
+                         by users about locating saved content across all categories.
+                        <br><br>
+                        This also revealed to us something user feedback alone did not: we were missing a <strong>key opportunity area regarding the 
+                            ‘Create a Playlist’ functionality</strong>. According to product research, users who create a playlist have average month 1 retention rate of 89% vs. 76% for users who 
+                        do not create a playlist (Redshift).
+                    </p>
+                </div>
+                <div class="img-wrap"><img src="./iheart-library/baseline-usability-report.png"></div>
+            </div>
+            <!-- COMPETITIVE ANALYSIS -->
+            <div class="d-flex flex-column library-competitive">
+                <div class="d-flex split-section">
+                    <div class="header-ul-wrap">
+                        <h2>COMPETITIVE ANALYSIS</h2>
+                        <p class="header-ul">What is the competitive landscape?</p>
+                    </div>
+                    <p class="split-right">
+                        With a foundational understanding of Library problem areas and user pain points, we then sought to understand iHeart’s positioning
+                        among audio, radio, and podcasting competitors.
+                    </p>
+                </div>
+                <div class="d-flex flex-column cluster-16">
+                    <div class="d-flex cluster-16 library-competitive-row1">
+                        <div class="contain-sm">
+                            <p>
+                                Reviewing competitors provided us valuable insight into how they approach structuring their users’ saved content, since
+                                 each has different content offerings.
+                                 <br><br>
+                                 Among 8 competitors, we observed 3 different types of navigations: <strong>list directories, tabs, and filters</strong>.
+                            </p>
+                        </div>
+                        <div class="contain-sm d-flex justify-content-center align-items-center">
+                            <div class="img-wrap">
+                                <img class="d-none d-sm-block" src="./iheart-library/competitors.png">
+                                <img class="d-block d-sm-none" src="./iheart-library/competitors2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrap"><img src="./iheart-library/competitorfig.png"></div>
+                    <div class="d-flex cluster-16 library-competitive-row2">
+                        <div class="contain-img img-wrap">
+                            <img class="d-none d-sm-block" src="./iheart-library/competitor-compare.jpg">
+                            <img class="d-block d-sm-none" src="./iheart-library/competitor-compare2.jpg">
+                        </div>
+                        <div class="contain-sm">
+                            <p>
+                                We also compared features between each, which helped illustrate how iHeart is different and which areas we can take 
+                                inspiration from.
+                                <br><br>
+                                We noted in particular different sort/filtering capabilities and recent content being surfaced, features iHeart lacks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BRAINSTORMING -->
+            <div class="d-flex flex-column library-brainstorm">
+                <div>
+                    <div class="header-ul-wrap">
+                        <h2>BRAINSTORMING</h2>
+                        <p class="header-ul">Lo-fi Wireframes / Rapid Prototyping</p>
+                    </div>
+                    <p>
+                        In the ideation stage, I aimed to generate as many ideas as possible given the pain points we wanted to address. We experimented
+                        with different high-level navigations and categories, considering different use cases and all iHeart content types. 
+                        We focused on:
+                    </p>
+                </div>
+                <div>
+                    <div class="library-icon-grid d-flex">
+                        <div class="d-flex align-items-center">
+                            <img src="./iheart-library/ph_stack.svg">
+                            <p>Organized & Intuitive Structure</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="./iheart-library/ph_stack.svg">
+                            <p>Reducing Steps to Reach Content</p>
+                        </div>
+                    </div>
+                    <div class="library-icon-grid d-flex">
+                        <div class="d-flex align-items-center">
+                            <img src="./iheart-library/ph_stack.svg">
+                            <p>Sorting Capabilities</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="./iheart-library/ph_stack.svg">
+                            <p>Surfacing Recent Content</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column cluster-56 contain-lg">
+                    <div>
+                        <h3>IDEATION</h3>
+                        <div class="d-flex flex-column cluster-16">
+                            <div class="img-wrap"><img src="./iheart-library/ideation1.jpg"></div>
+                            <div class="d-flex align-items-center lib-ideation-row2">
+                                <div class="img-wrap"><img src="./iheart-library/ideation2.png"></div>
+                                <div class="img-wrap"><img src="./iheart-library/ideation3.png"></div>
+                                <div class="img-wrap"><img src="./iheart-library/ideation4.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><strong>We explored high-level navigational structures and information architectures, creating variations of the following explorations:</strong></p>
+                    <div class="img-wrap"><img src="./iheart-library/ideation-labeled.png"></div>
+                    <div class="library-crit d-flex align-items-center justify-content-around">
+                        <p>💬</p>
+                        <p>
+                            We held several critique sessions with UXD and stakeholders in the early stages of designs to capture all relevant considerations and missed use cases.
+                        </p>
+                        <p>🧠</p>
+                    </div>
+                </div>
+            </div>
+            <!-- NARROWING IN -->
+            <div class="d-flex flex-column library-narrowing">
+                <div>
+                    <h3>NARROWING IN ON THE SOLUTION...</h3>
+                    <p>Consulting with subject matter experts and iterating on a wide variety of lo-fi wireframes allowed us to identify which ones to <strong>eliminate or explore further</strong>.</p>
+                </div>
+                <div class="d-flex flex-column cluster-16 library-solu">
+                    <div class="d-flex cluster-16">
+                        <div class="contain-img img-wrap"><img src="./iheart-library/solution1.png"></div>
+                        <div class="contain-sm">
+                            <h4>LIST DIRECTORY AND CAROUSELS ❌</h4>
+                            <p>
+                                Both these navigation structures were sidelined for not improving the <strong>issue of how layered Library is</strong>. With the carousel
+                                 structure, it was impractical to give users ways to organize or sort without resorting to subpages, and it also resulted
+                                  in problematic empty states.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex cluster-16">
+                        <div class="contain-sm">
+                            <h4>‘ALL’ VIEW</h4>
+                            <p>
+                                The All view rose up as a strong candidate because of what we know about our <strong>users generally saving only 1-3 items</strong>. 
+                                <br><br>
+                                It was important therefore to <strong>reduce steps</strong> to reach this content and immediately surface assets to users upon entry 
+                                to <strong>entice them to engage</strong>.
+                            </p>
+                        </div>
+                        <div class="contain-img img-wrap"><img src="./iheart-library/solution2.png"></div>
+                    </div>
+                    <div class="d-flex cluster-16">
+                        <div class="contain-img img-wrap"><img src="./iheart-library/asset-breakdown.png"></div>
+                        <div class="contain-sm">
+                            <h4>CONTENT-BASED INFORMATION ARCHITECTURE</h4>
+                            <p>
+                                While we considered behavioral categories like “Recents” and lower-level content categories like “Saved episodes,” 
+                                these could not support future Library changes. Conversely, a high level content-based architecture
+                                 (Stations, Artists, Podcasts, Playlists) is generalized enough to <strong>accommodate for many content types</strong> and <strong>scale</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex cluster-16">
+                        <div class="contain-sm">
+                            <h4>SORTING ABILITY</h4>
+                            <p>
+                                Sorting is necessary for defining logic in multi-content lists and to empower users to organize their assets according to their preferences.
+                                <br><br>
+                                We documented extensive feedback requesting a sorting ability in Library, and there appears to be a user expectation tied to it too. Among 
+                                competitors, 6/8 have sorting and 7/8 surface recent content in the Library.
+                            </p>
+                        </div>
+                        <div class="contain-img img-wrap"><img src="./iheart-library/solution4.png"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- USER TESTING -->
+            <div class="d-flex flex-column library-usertest">
+                <div class="d-flex split-section">
+                    <div class="header-ul-wrap">
+                        <h2>USER TESTING</h2>
+                        <p class="header-ul">Validating Our Ideas</p>
+                    </div>
+                    <p class="split-right">
+                        Given the strengths of a default All view, sorting capabilities, and content-based information architecture, we narrowed down our designs to 2 top-level 
+                        navigational structures (filters and tabs) that could support these criteria.
+                        <br><br>
+                        It was now the stage where we wanted to test our ideas, so we collaborated with the UX Research Guild to conduct research.
+                    </p>
+                </div>
+                <div class="d-flex flex-column contain-lg">
+                    <p>
+                        We built and launched an <strong>unmoderated study on UserTesting with 15 participants</strong> who were randomly assigned to <strong>one of the two interactive prototypes</strong>
+                         and given a series of tasks to complete. We assessed their behavior to gauge the overall understanding of different parts of our design.
+                    </p>
+                    <div class="img-wrap"><img src="./iheart-library/usertesting-areas.png"></div>
+                    <div>
+                        <h3>Key Findings</h3>
+                        <div class="d-flex flex-column cluster-16">
+                            <div class="library-key-findings d-flex cluster-16">
+                                <div><p>
+                                    <strong>Participants took different paths to get to desired content 💭</strong>
+                                    <br><br>
+                                    The podcasts tab, downloads tab, episodes card, and show card were all used to reach downloaded podcasts, with 15/15 participants reporting the 
+                                    task easy or very easy. This indicates that providing multiple access points is beneficial.
+                                </p></div>
+                                <div><p>
+                                    <strong>Recent activity was generally well-received and understood 🤓</strong>
+                                    <br><br>
+                                    Several participants even expressed an expectation for our particular sorting option as the default. One said, “Usually the things that are most recent
+                                    are the things you may want to continue with,” validating our hypothesis.
+                                </p></div>
+                            </div>
+                            <div class="library-key-findings d-flex cluster-16">
+                                <div><p>
+                                    <strong>Participants enjoyed the ability to create playlists on the All view and Playlists view 👏</strong>
+                                    <br><br>
+                                    Participants created playlists two ways, 10/15 from the All view and 7/15 from the Playlists view (several demonstrated both), confirming that
+                                    the playlist CTA button on the All view has merit.
+                                </p></div>
+                                <div><p>
+                                    <strong>The browse options had mixed reception and caused confusion for many 😶‍🌫️</strong>
+                                    <br><br>
+                                    Many participants found the presence of content discovery/browse features in the floating “New” button unexpected and confusing, so we 
+                                    sidelined our out-of-the-box idea.
+                                </p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column library-tabfilt">
+                    <div>
+                        <h3>BUT, TABS OR FILTERS?</h3>
+                        <p>
+                            During testing, both prototypes universally facilitated successful task completion and clearly communicated Library organization. Participants described both 
+                            prototypes with words like <strong>easy to use, organized, familiar, and straightforward</strong>.
+                            <br><br>
+                            To narrow down our designs, we decided to revisit the tab and filter navigation models and conduct an in-depth analysis, weighing the benefits and drawbacks of each.
+                        </p>
+                    </div>
+                    <div class="img-wrap"><img src="./iheart-library/venn-tabfilter.png"></div>
+                    <div class="d-flex flex-column library-tab-conclude">
+                        <p>
+                            <strong>Tabs ultimately won based on our assessment of iHeart’s consumer base and their behaviors</strong>. 
+                            <br>Our product knowledge tells us two key things 
+                            about iHeart’s current user base and demographic:
+                        </p>
+                        <div class="d-flex library-icon-grid">
+                            <div class="d-flex align-items-center">
+                                <img src="./iheart-library/ph_puzzle-piece.svg">
+                                <p>Frequently in cars and on the go</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="./iheart-library/ph_puzzle-piece.svg">
+                                <p>Older and likely not as tech-savvy</p>
+                            </div>
+                        </div>
+                        <p>
+                            The tab-based navigation is more forgiving in various circumstances for our users. It allow users to quickly
+                             switch between viewing content types in <strong>one tap</strong>, rather than two. Moreover, the <strong>visual constant</strong> of the content tabs 
+                             serves as <strong>user education</strong> by sectioning off Library assets to their respective sections and rendering visual changes in the content list 
+                             less jarring compared to filters.
+                            <br><br>
+                            From here, we landed on a final recommendation that we were confident would support our current and future Library needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- FINAL PRODUCT -->
+            <div class="library-final d-flex flex-column align-items-center">
+                <div>
+                    <h2>FINAL PRODUCT <img src="./iheart-library/ph_rainbow.svg"></h2>
+                </div>
+                <div class="d-flex align-items-center library-final-row1">
+                    <div class="img-wrap"><img src="./iheart-library/library1.png"></div>
+                    <div>
+                        <h4>Default All View</h4>
+                        <p>
+                            Surfacing all assets <strong>removes unnecessary barriers</strong> to content for effortless stream start. By capturing all content 
+                            regardless of type in this default view, we don't favor certain listeners over others which yields a <strong>personalized experience for all</strong>.
+                            <br><br>
+                            The floating CTA button facilitates easier playlist creation, predicted to increase listener retention.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center library-final-row2">
+                    <div>
+                        <h4>Content-Based Tabs</h4>
+                        <p>
+                            Users can quickly switch between viewing different content types in <strong>one tap</strong> with a tab navigation. As Library scales and iHeart's user base saves more content, 
+                            this <strong>robust information architecture</strong> ensures that Library stays organized and easy to navigate.
+                            <br><br>
+                            Stations and Artists are divided into separate categories—aligning with our web platform—to better fit user mental models.
+                        </p>
+                    </div>
+                    <div class="d-flex library-duoscreen">
+                        <div class="img-wrap"><img src="./iheart-library/library6.png"></div>
+                        <div class="img-wrap"><img src="./iheart-library/library7.png"></div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center library-final-row1">
+                    <div class="img-wrap"><img src="./iheart-library/library3.png"></div>
+                    <div>
+                        <h4>Sorting Tool</h4>
+                        <p>
+                            Sorting gives users agency to organize their saved content as they desire and helps to surface relevant content that they are most likely to be interested in 
+                            — rendering a more <strong>engaging, personalized experience</strong>.
+                            <br><br>
+                            The copy and sort options were finalized after deliberating many others like Recents, Recently played, Recently followed, etc. Our final options
+                            <strong>captured all relevant use cases</strong> and were <strong>successful in testing</strong>.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center library-final-row2">
+                    <div>
+                        <h4>Contextual Filters</h4>
+                        <p>
+                            Depending on the selected tab, users will be able to further narrow down their view with filters.
+                            <br><br>
+                            With this, we retain the current ability of viewing only downloaded podcasts or created playlists, but still introduce that content 
+                            earlier in the flow.
+                        </p>
+                    </div>
+                    <div class="d-flex library-duoscreen">
+                        <div class="img-wrap"><img src="./iheart-library/library2.png"></div>
+                        <div class="img-wrap"><img src="./iheart-library/library4.png"></div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center library-final-row1">
+                    <div class="img-wrap"><img src="./iheart-library/library5.png"></div>
+                    <div>
+                        <h4>Downloads Tab</h4>
+                        <p>
+                            The Downloads tab makes accessing downloaded podcasts easy, and it can host <strong>multiple content types</strong> as we consider 
+                            <strong>future scaling</strong>. Premium subscription users already have the ability to download 2 content types.
+                            <br><br>
+                            It also acts as a pre-selected tab for an enhanced offline experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column contain-lg library-final-sortempty">
+                    <div>
+                        <h4>Sorting Options</h4>
+                        <div class="img-wrap"><img src="./iheart-library/sorting.png"></div>
+                    </div>
+                    <div>
+                        <h4>Empty States</h4>
+                        <div class="img-wrap"><img src="./iheart-library/empty-states.png"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- DESIGN SYSTEM -->
+            <div class="d-flex flex-column library-designsys">
+                <div>
+                    <div class="header-ul-wrap">
+                        <h2 class="header-ul">DESIGN SYSTEM</h2>
+                    </div>
+                    <p>
+                        During my internship, I contributed to iHeart’s evolving design system, using Figma design tokens to 
+                        create layered components with properties and variables. Below is an example of a navigation component I built (logo 
+                        and text variants), accounting for responsive sizing and touch target dimensions. I also created iOS Native status bar 
+                        components that can be coupled with our platform-flexible library.
+                    </p>
+                </div>
+                <div class="d-flex cluster-16">
+                    <div class="d-flex flex-column justify-content-between contain-sm">
+                        <div>
+                            <h4>Top Navigation Component</h4>
+                            <div class="img-wrap"><img src="./iheart-library/header-components.png"></div>
+                        </div>
+                        <div>
+                            <h4>Dark Mode Theming</h4>
+                            <div class="img-wrap"><img src="./iheart-library/header-dark.png"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column cluster-16">
+                        <div class="contain-sm">
+                            <h4>Accessibility Labels</h4>
+                            <div class="img-wrap"><img src="./iheart-library/header-accessibility.png"></div>
+                        </div>
+                        <div class="contain-sm">
+                            <h4>Specifications</h4>
+                            <div class="img-wrap"><img src="./iheart-library/dimensions.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Next steps & reflection -->
+            <div class="d-flex flex-column library-reflect">
+                <div>
+                    <div class="header-ul-wrap">
+                        <h2 class="header-ul">NEXT STEPS ⏭️</h2>
+                    </div>
+                    <p>
+                        We reached our final design recommendation by the end of my internship and this project is currently in development. The next 
+                        steps would be creating handoff files, working with engineering to further provide support to develop the major features 
+                        we are proposing that will impact multiple platforms. Engineering discovery sessions would be necessary to specify technical aspects
+                         of the experience (offline experience, refresh frequency, overflows, etc). 
+                        <br><br>
+                        We would also prioritize working with analytics and product to implement a data tracking infrastructure for Library so that we can not
+                         only measure the success of this Library initiative but also monitor and improve the product for the future.
+                    </p>
+                </div>
+                <div>
+                    <div class="header-ul-wrap">
+                        <h2 class="header-ul">REFLECTION 🤝🏼</h2>
+                    </div>
+                    <p>
+                        I learned a lot about product design and management throughout the course of this project. Beyond gaining technical 
+                        skills, I collaborated with many teams and people in my research process. Presenting my designs frequently refined my 
+                        ability to explain my decisions, answer to different stakeholders, and think more critically about my work.
+                        <br><br>
+                        I also experienced operating in ambiguity. In my research process, I faced constraints such as the lack of data tracking within 
+                        our current Library. Despite that, I learned how to capitalize on other the resources at our disposal to make informed design 
+                        decisions.
+                        <br><br>
+                        Huge thank you to the iHeart digital product team, the UX team, and stakeholders for giving me the opportunity
+                         to work on this impactful initiative.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-main">
+        <div class="footer-wrap container-fluid">
+            <div class="bye-message">
+                <h3>Thanks for visiting my portfolio, let’s connect!</h3>
+                <p>2024 © audrey vo | Built by Audrey Vo with lots of 🍵</p>
+            </div>
+            <div class="footer-nav">
+                <ul class="navbar-nav d-flex align-items-left">
+                    <li class="nav-item flip-contain w50"><a class="nav-link" href="./index.html">
+                        <p class="flip-item">Home</p>
+                        <p class="flip-item">Home</p>
+                    </a></li>
+                    <li class="nav-item flip-contain w100"><a class="nav-link" href="./about.html">
+                        <p class="flip-item">About Me</p>
+                        <p class="flip-item">About Me</p>
+                    </a></li>
+                    <li class="nav-item flip-contain w40"><a class="nav-link" href="./play.html">
+                        <p class="flip-item">Play</p>
+                        <p class="flip-item">Play</p>
+                    </a></li>
+                </ul>
+                <ul class="navbar-nav d-flex align-items-left">
+                    <li class="nav-item flip-contain w76"><a class="nav-link" href="./contact.html">
+                        <p class="flip-item">Contact</p>
+                        <p class="flip-item">Contact</p>
+                    </a></li>
+                    <li class="nav-item flip-contain w76"><a class="nav-link" href="https://drive.google.com/file/d/1mV_lZ5mivO7va8ISvqSaNdLUXLR6sNs4/view?usp=sharing" target="_blank">
+                        <p class="flip-item">Resume</p>
+                        <p class="flip-item">Resume</p>
+                    </a></li>
+                    <li class="nav-item flip-contain w90"><a class="nav-link" href="https://linkedin.com/in/audrey-vo" target="_blank">
+                        <p class="flip-item">LinkedIn</p>
+                        <p class="flip-item">LinkedIn</p>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarTogglerButtons = document.querySelectorAll('.navbar-toggler');
+            var menuIcon = document.getElementById('menu-icon');
+            // Add click event listener to all navbar-toggler buttons
+            navbarTogglerButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Check if the button has the 'collapsed' class
+                    if (button.classList.contains('collapsed')) {            
+                    menuIcon.classList.remove('close');
+                    } else {
+                    menuIcon.classList.add('close');
+                    }
+                });
+            });
+        });
+
+        gsap.from('.navbar', {
+            duration: 1.6,
+            y: '-100%',
+            ease: 'power2.out'
+        });
+        gsap.from('.navbar', {
+            duration: 1.4,
+            opacity: 0,
+            ease: 'power2.in',
+        });
+        
+    </script>
+  </body>
+</html>
