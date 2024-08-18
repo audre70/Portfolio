@@ -1164,7 +1164,7 @@ body#play-page {
 }
 .library-content {
     width: 100%;
-    gap: 13rem;
+    gap: 9rem;
     margin-bottom: 10rem;
 }
 .library-wrap p {
@@ -1201,7 +1201,7 @@ body#play-page {
 }
 .library-details {
     gap: 2rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4.5rem;
 }
 .library-details div p:first-child {
     color: #FF6E81;
@@ -1314,7 +1314,7 @@ body#play-page {
 
 /* user feedback */
 .library-feedback {
-    gap: 6.5rem;
+    gap: 5.5rem;
 }
 /* existing research */
 .library-existresearch {
@@ -1324,7 +1324,7 @@ body#play-page {
 .library-existresearch .img-wrap { flex: 2; }
 /* competitive analysis */
 .library-competitive {
-    gap: 9rem;
+    gap: 7rem;
 }
 .library-competitive-row1 div.contain-sm:nth-of-type(1) {
     flex: 2;
@@ -1336,7 +1336,7 @@ body#play-page {
 
 /* brainstorming */
 .library-brainstorm {
-    gap: 5rem;
+    gap: 4rem;
 }
 .library-icon-grid {
     gap: 2rem;
@@ -1368,7 +1368,7 @@ body#play-page {
 }
 /* narrowing solution */
 .library-narrowing {
-    gap: 6rem;
+    gap: 4rem;
 }
 .library-solu .contain-sm {
     flex: 5;
@@ -1388,7 +1388,7 @@ body#play-page {
     gap: 7rem;
 }
 .library-usertest .contain-lg {
-    gap: 5rem;
+    gap: 4rem;
     margin-bottom: 1.5rem;
 }
 .library-usertest h3 {
@@ -1413,7 +1413,8 @@ body#play-page {
 }
 /* final */
 .library-final {
-    gap: 10rem;
+    /* gap: 10rem; */
+    gap: 7rem;
 }
 .library-final h2 {
     display: inline;
@@ -1496,7 +1497,7 @@ body#play-page {
         padding: 0 2rem;
     }
     .library-content {
-        gap: 8rem;
+        gap: 7rem;
     }
     /* hero */
     .library-hero img {
@@ -1536,6 +1537,12 @@ body#play-page {
         padding: 24px 20px;
     }
     /* problem */
+    .library-problem {
+        gap: 4rem;
+    }
+    .library-problem .split-right {
+        gap: 3rem;
+    }
     .library-problem .split-right h3 {
         font-size: 1.1rem;
         margin-bottom: 1.2rem;
@@ -1553,6 +1560,10 @@ body#play-page {
     }
     .library-problem .contain-lg .d-flex .img-wrap {
         padding: 2rem 6rem;
+    }
+    /* competitive */
+    .library-competitive {
+        gap: 4rem;
     }
     /* brainstorm */
     .library-crit p:nth-of-type(1),
@@ -1577,6 +1588,9 @@ body#play-page {
         font-size: 0.85rem;
     }
     /* testing */
+    .library-usertest {
+        gap: 4rem;
+    }
     .library-key-findings div {
         padding: 20px 16px;
     }
@@ -1584,7 +1598,13 @@ body#play-page {
         font-size: 0.7rem;
         line-height: .9rem;
     }
+    .library-tab-conclude {
+        gap: 2.5rem;
+    }
     /* final */
+    .library-final {
+        gap: 5rem;
+    }
     .library-final-row1,
     .library-final-row2 {
         gap: 2rem;
@@ -1600,7 +1620,7 @@ body#play-page {
         padding: 0 1.5rem;
     }
     .library-content {
-        gap: 6rem;
+        gap: 5rem;
     }
     .library-wrap p {
         font-size: .85rem;
@@ -1655,7 +1675,7 @@ body#play-page {
         padding: 20px 16px;
     }
     .contain-sm {
-        padding: 18px 12px;
+        padding: 16px 12px;
     }
     .contain-lg p,
     .contain-sm p {
@@ -1735,7 +1755,7 @@ body#play-page {
     }
     /* competitive */
     .library-competitive {
-        gap: 4rem;
+        gap: 3rem;
     }
     .library-competitive-row1 div.contain-sm:nth-of-type(1) {
         flex: 4;
@@ -1802,13 +1822,13 @@ body#play-page {
     }
     /* testing */
     .library-usertest {
-        gap: 4rem;
+        gap: 3rem;
     }
     .library-usertest .cluster-16 {
         gap: 8px;
     }
     .library-key-findings div {
-        padding: 18px 12px;
+        padding: 14px 12px;
     }
     .library-key-findings div p {
         font-size: 0.55rem;
@@ -1831,7 +1851,7 @@ body#play-page {
     }
     /* final screens */
     .library-final {
-        gap: 5rem;
+        gap: 4rem;
     }
     .library-wrap .library-final h4 {
         margin-bottom: 1.5rem;
