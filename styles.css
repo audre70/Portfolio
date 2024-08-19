@@ -87,6 +87,7 @@ a#menu-icon .bar {
 .navbar ul.navbar-nav {
     gap: 1.6rem;
     font-size: 1.125rem;
+    align-items: center;
 }
 
 #resumeModal .modal-body, #resumeModal .modal-body a {
@@ -164,19 +165,25 @@ a#menu-icon .bar {
         display: none;
         /* hide all second flip links */
     } 
+    .navbar ul.navbar-nav {
+        gap: 1.5rem;
+        align-items: start; /* important for LEFT ALIGN NAV ITEMS */
+        padding: 2rem; /* IMPORTANT THAT IT IS THE SAME AS PAGE LR PADDING */
+    }
+    .navbar .navbar-brand .flip-contain p { /* BRAND LOGO */
+        font-size: 1.3rem;
+    }
     .flip-item,
     .nav-link p {
         /* disable animation, fix margins padding */
         position: static;
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         line-height: normal;
         margin: 0;
         border: none;
         transition: none;
-    }
-    .navbar ul.navbar-nav {
-        gap: 2rem;
+        font-size: 1rem;
     }
     .navbar.bg-dark {
         background-color: rgba(0, 0, 0, 0.90) !important;
@@ -198,9 +205,14 @@ a#menu-icon .bar {
     .container-fluid {
         padding: 0;
     }
+    .navbar {
+        height: 65px;
+    }
     .navbar-brand {
-        height: 86px; /* VERY IMPORTANT TO MAKE THIS SAME AS NAVBAR HEIGHT */
-        margin-left: 35px; 
+        height: 65px;
+        /* VERY IMPORTANT TO MAKE THIS SAME AS NAVBAR HEIGHT */
+        /* height: 86px; */
+        margin-left: 2rem; 
         display: flex;
         align-items: center;
         /* to replace paddings in container-fluid, cancelled out to do 
@@ -222,6 +234,9 @@ a#menu-icon .bar {
     }
     .navbar-toggler {
         margin-right: .5rem;
+    }
+    .navbar ul.navbar-nav {
+        padding: 1.5rem; /* IMPORTANT THAT IT IS THE SAME AS PAGE LR PADDING */
     }
 }
 
@@ -267,7 +282,6 @@ a#menu-icon .bar {
 /* -----------------------------
 ------ FOOTER MEDIA QUERY ------
 -------------------------------- */
-/* @media (max-width: 1024px) { */
 @media (max-width: 1200px) {
     .footer-main {
         padding: 0 1rem;
@@ -288,8 +302,10 @@ a#menu-icon .bar {
         gap: 0.5rem;
     }
     .footer-nav .navbar-nav .nav-item .nav-link {
-        font-size: 0.9rem;
         padding: 0 !important;
+    }
+    .footer-nav .navbar-nav .nav-item .nav-link p {
+        font-size: 0.9rem;
     }
     .bye-message {
         width: 67%;
@@ -1502,6 +1518,7 @@ body#play-page {
     /* hero */
     .library-hero img {
         border-radius: 1rem;
+        margin: 3rem 0;
     }
     #library-info {
         font-size: 1.1rem;
@@ -1638,7 +1655,7 @@ body#play-page {
     }
     /* hero */
     .library-hero img {
-        margin: 4rem 0 2.5rem;
+        margin: 2rem 0 2.5rem;
         border-radius: .6rem;
     }
     .library-wrap h1 {
@@ -1646,7 +1663,7 @@ body#play-page {
     }
     #library-info {
         font-size: .9rem;
-        margin: 1.5rem 0 4rem;
+        margin: 1.5rem 0 3rem;
     }
     .library-details div { width: 45%; }
     .library-details { 
@@ -2000,12 +2017,11 @@ body#play-page {
     .mfr-hero.img-wrap {
         border-radius: .6rem;
         border: 1px solid black;
-        margin: 4rem 0 3rem;
+        margin: 3rem 0;
     }
     .container-fluid.mfr-wrap {
         padding: 0 2rem;
     }
-
     #mfr-info {
         font-size: 1rem;
     }
@@ -2031,6 +2047,9 @@ body#play-page {
     }
     .container-fluid.mfr-wrap { 
         padding: 0 1.5rem;
+    }
+    .mfr-hero.img-wrap {
+        margin: 2rem 0 2.5rem;
     }
     .mfr-wrap h1 {
         font-size: 1.5rem;
