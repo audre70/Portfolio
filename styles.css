@@ -1000,11 +1000,8 @@ body#play-page {
     width: 33%;
 }
 /* afkar proj */
-.afkar-play div:first-of-type {
-    flex: 13;
-}
-.afkar-play div:nth-of-type(2) {
-    flex: 20;
+.afkar-play div{
+    flex: 1;
 }
 
 /* overlays */
